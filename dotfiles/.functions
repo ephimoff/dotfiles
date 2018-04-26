@@ -1,0 +1,19 @@
+# create a directory and open it straight away
+mcd ()
+{
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
+}
+
+
+# Reset corrupted Icon Services cache (https://furbo.org/2015/01/19/clearing-the-icon-services-cache-in-yosemite/)
+fixicons ()
+{
+  sudo find /private/var/folders/ \
+  -name com.apple.dock.iconcache -exec rm {} \;
+  
+  sudo find /private/var/folders/ \
+  -name com.apple.iconservices -exec rm -rf {} \;
+
+  sudo rm -rf /Library/Caches/com.apple.iconservices.store
+}

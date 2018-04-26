@@ -1,0 +1,58 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // Adding Fira Code font
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true,
+
+    // Markdown linter rules
+    "markdownlint.config": {
+        "default": true,
+        "MD013": false,
+        "MD014": false,
+        "MD024": false,
+        "MD033": false,
+        "MD040": false,
+        "MD007": { "indent": 4 }
+    },
+    // Sets how line-breaks are rendered in the markdown preview. Setting it to 'true' creates a <br> for every newline.
+    "markdown.preview.breaks": true,
+    // Markdown TOC
+    "markdown-toc.depthFrom":2,
+
+"workbench.commandPalette.preserveInput":true,
+"git.confirmSync": false,
+"window.restoreFullscreen": true,
+"workbench.iconTheme": "material-icon-theme",
+"material-icon-theme.showUpdateMessage": false,
+"workbench.colorTheme": "Alabaster",
+
+// Terminal
+"terminal.integrated.cursorStyle": "line",
+"terminal.integrated.cursorBlinking": true,
+
+"files.associations": {
+    "*.mustache": "html",
+    "*.nunjucks": "html"
+},
+"git.enableSmartCommit": true,
+"workbench.startupEditor": "newUntitledFile",
+// jshint
+"jshint.options": {
+    // enable ecma version 6
+    "esversion":6,
+    "multistr": true
+},
+"explorer.confirmDragAndDrop": false,
+"gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+}
+}
+
