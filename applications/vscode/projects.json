@@ -70,5 +70,11 @@
 		"rootPath": "$home/Projects/ansible-dotfiles",
 		"paths": [],
 		"group": ""
+	},
+	{
+		"name": "dotfiles-min",
+		"rootPath": "$home/Projects/dotfiles-min",
+		"paths": [],
+		"group": ""
 	}
 ]
