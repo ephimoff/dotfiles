@@ -6,15 +6,15 @@
     "editor.fontLigatures": true,
 
     // Markdown linter rules
-    // "markdownlint.config": {
-    //     "default": true,
-    //     "MD013": false,
-    //     "MD014": false,
-    //     "MD024": false,
-    //     "MD033": false,
-    //     "MD040": false,
-    //     "MD007": { "indent": 4 }
-    // },
+    "markdownlint.config": {
+        "default": true,
+        "MD013": false,
+        "MD014": false,
+        "MD024": false,
+        "MD033": false,
+        "MD040": false,
+        "MD007": { "indent": 4 }
+    },
     // Sets how line-breaks are rendered in the markdown preview. Setting it to 'true' creates a <br> for every newline.
     "markdown.preview.breaks": true,
     // Markdown TOC
@@ -53,6 +53,7 @@
     "suppressNoRepositoryWarning": false,
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
-}
+},
+"gitlens.historyExplorer.enabled": true
 }
 
