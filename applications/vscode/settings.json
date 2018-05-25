@@ -5,7 +5,20 @@
     "editor.fontSize": 12,
     "editor.fontLigatures": true,
 
-    // Markdown linter rules
+    // Appearance and behaviour
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Alabaster",
+    "material-icon-theme.showUpdateMessage": false,
+    "window.restoreFullscreen": true,
+    "workbench.commandPalette.preserveInput":true,
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDragAndDrop": false,
+    
+    // Git
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+
+    // Markdown related
     "markdownlint.config": {
         "default": true,
         "MD013": false,
@@ -20,40 +33,28 @@
     // Markdown TOC
     "markdown-toc.depthFrom":2,
 
-"workbench.commandPalette.preserveInput":true,
-"git.confirmSync": false,
-"window.restoreFullscreen": true,
-"workbench.iconTheme": "material-icon-theme",
-"material-icon-theme.showUpdateMessage": false,
-"workbench.colorTheme": "Alabaster",
+    // Terminal
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
 
-// Terminal
-"terminal.integrated.cursorStyle": "line",
-"terminal.integrated.cursorBlinking": true,
+    // jshint
+    "jshint.options": {
+        // enable ecma version 6
+        "esversion":6,
+        "multistr": true
+    },
 
-// "files.associations": {
-//     "*.mustache": "html",
-//     "*.nunjucks": "html"
-// },
-"git.enableSmartCommit": true,
-"workbench.startupEditor": "newUntitledFile",
-// jshint
-"jshint.options": {
-    // enable ecma version 6
-    "esversion":6,
-    "multistr": true
-},
-"explorer.confirmDragAndDrop": false,
-"gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true
-},
-"gitlens.historyExplorer.enabled": true
+    // Git Lens
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true
 }
 
