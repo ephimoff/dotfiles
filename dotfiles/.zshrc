@@ -24,7 +24,7 @@ POWERLEVEL9K_TIME_FOREGROUND='grey'
 
 # plugins to load (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # shellcheck disable=SC2034
-plugins=(git copydir z osx brew docker)
+plugins=(git autojump npm copydir osx brew docker)
 # shellcheck disable=SC1090
 source $ZSH/oh-my-zsh.sh
 
@@ -42,6 +42,9 @@ export PATH="$HOME/Projects/scripts:$PATH"
 
 # go
 # export PATH="/usr/local/go/bin:$PATH"
+
+# mongoDB
+# export PATH=$PATH:/usr/local/mongodb/bin
 
 # ssh
 export SSH_KEY_PATH="$HOME/.ssh/rsa_id"

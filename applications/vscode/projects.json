@@ -76,5 +76,17 @@
 		"rootPath": "$home/Projects/dotfiles-min",
 		"paths": [],
 		"group": ""
+	},
+	{
+		"name": "iread",
+		"rootPath": "$home/Projects/iread",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "flibusta-docker-mysql",
+		"rootPath": "$home/Projects/flibusta-docker-mysql",
+		"paths": [],
+		"group": ""
 	}
 ]

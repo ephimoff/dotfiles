@@ -6,7 +6,6 @@ alias ...="cd ../.."
 alias -- -="cd -"
 
 # Shortcuts
-alias d='docker'
 alias g="git"
 alias h="history"
 alias o="open"
@@ -50,6 +49,9 @@ alias lu='lt -u'         # Lists sorted by date, most recent last, shows access 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew and their installed packages
 alias update='brew update; brew upgrade; brew cleanup; npm -g update'
 
+# docker
+alias d='docker'
+alias dc='docker-compose'
 
 # orion
 alias rdep="rgrav deploy -R unison_frontend:0 -R unison_backend:0 -R unison_haproxy:0 -R connect:0 -p ec2"
