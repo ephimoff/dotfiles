@@ -12,9 +12,8 @@ tmp/**
 id_rsa
 
 # Folder view configuration files
-Desktop.ini
-*/**/.DS_Store
 .DS_Store
+Desktop.ini
 .AppleDouble
 .LSOverride
 
