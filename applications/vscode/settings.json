@@ -38,11 +38,14 @@
     "terminal.integrated.cursorBlinking": true,
 
     // jshint
-    "jshint.options": {
-        // enable ecma version 6
-        "esversion":6,
-        "multistr": true
-    },
+    // "jshint.options": {
+    //     // enable ecma version 6
+    //     "esversion":6,
+    //     "multistr": true
+    // },
+
+    // eslint
+    
 
     // js
     "javascript.suggestionActions.enabled": false,

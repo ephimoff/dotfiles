@@ -32,13 +32,11 @@ source $ZSH/oh-my-zsh.sh
 # rbenv
 eval "$(rbenv init - zsh)"
 
-# export MANPATH="/usr/local/man:$MANPATH"
-export PATH="$HOME/Projects/rgrav:$PATH"
 
 # orion: graviton
+export PATH="$HOME/Projects/rgrav:$PATH"
 export PATH="$HOME/.usr/graviton-cli/bin:$PATH"
 
-export PATH="$HOME/Projects/scripts:$PATH"
 
 # go
 # export PATH="/usr/local/go/bin:$PATH"
@@ -50,6 +48,7 @@ export PATH="$HOME/Projects/scripts:$PATH"
 export SSH_KEY_PATH="$HOME/.ssh/rsa_id"
 
 # scripts
+export PATH="$HOME/Projects/scripts:$PATH"
 export PATH="$HOME/.scripts:$PATH"
 
 # pager
