@@ -13,6 +13,7 @@
     "workbench.commandPalette.preserveInput":true,
     "workbench.startupEditor": "newUntitledFile",
     "explorer.confirmDragAndDrop": false,
+    "editor.tabSize": 2,
     
     // Git
     "git.confirmSync": false,
