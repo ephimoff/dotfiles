@@ -34,7 +34,7 @@ eval "$(rbenv init - zsh)"
 
 
 # orion: graviton
-export PATH="$HOME/Projects/rgrav:$PATH"
+export PATH="$HOME/Projects/orion/rgrav:$PATH"
 export PATH="$HOME/.usr/graviton-cli/bin:$PATH"
 
 

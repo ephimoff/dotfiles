@@ -13,6 +13,8 @@
     "workbench.commandPalette.preserveInput":true,
     "workbench.startupEditor": "newUntitledFile",
     "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "editor.quickSuggestionsDelay": 0,
     "editor.tabSize": 2,
     
     // Git
@@ -33,6 +35,7 @@
     "markdown.preview.breaks": true,
     // Markdown TOC
     "markdown-toc.depthFrom":2,
+    "markdown-toc.updateOnSave":false,
 
     // Terminal
     "terminal.integrated.cursorStyle": "line",

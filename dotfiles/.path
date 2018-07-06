@@ -2,7 +2,7 @@
 [[ -d "$HOME/Projects/scripts" ]] && PATH="$PATH:$HOME/Projects/scripts"
 
 # rgrav
-[[ -d "$HOME/Projects/rgrav" ]] && PATH="$PATH:$HOME/Projects/rgrav"
+[[ -d "$HOME/Projects/orion/rgrav" ]] && PATH="$PATH:$HOME/Projects/orion/rgrav"
 
 # oracle sqlplus
 [[ -d "/Library/Oracle/instantclient" ]] && PATH="/Library/Oracle/instantclient:$PATH"
