@@ -41,14 +41,12 @@
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorBlinking": true,
 
-    // jshint
-    // "jshint.options": {
-    //     // enable ecma version 6
-    //     "esversion":6,
-    //     "multistr": true
-    // },
 
     // eslint
+    "eslint.validate": [
+        "javascript",
+        "vue",
+    ],
     
 
     // js
@@ -65,6 +63,8 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
-    "gitlens.historyExplorer.enabled": true
+    "gitlens.historyExplorer.enabled": true,
+    "extensions.ignoreRecommendations": false,
+    "window.zoomLevel": 0
 }
 

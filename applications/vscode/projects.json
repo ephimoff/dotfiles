@@ -49,13 +49,13 @@
 	},
 	{
 		"name": "solution_unison",
-		"rootPath": "$home/Projects/solutions/solution_unison",
+		"rootPath": "$home/Projects/orion/solution_unison",
 		"paths": [],
 		"group": ""
 	},
 	{
 		"name": "jira-cards-printing",
-		"rootPath": "$home/Projects/jira-cards-printing",
+		"rootPath": "$home/Projects/orion/jira-cards-printing",
 		"paths": [],
 		"group": ""
 	},

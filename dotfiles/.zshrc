@@ -77,3 +77,4 @@ setopt no_auto_remove_slash
 
 # shellcheck disable=SC2206
 fpath=(/usr/local/share/zsh-completions $fpath)
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

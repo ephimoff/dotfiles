@@ -26,6 +26,20 @@
 		],
 		"description": "Warn output to console"
 	},
+	"Info to console": {
+		"prefix": "cwi",
+		"body": [
+			"console.info(`[INFO] ${1:var} : ${${1:var}}`);",
+		],
+		"description": "Info output to console"
+	},
+	"Print blah in console": {
+		"prefix": "blah",
+		"body": [
+			"console.info('blah');",
+		],
+		"description": "Print blah in console"
+	},
 	"Error to console": {
 		"prefix": "cer",
 		"body": [
