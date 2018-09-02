@@ -6,66 +6,6 @@
 		"group": ""
 	},
 	{
-		"name": "notes",
-		"rootPath": "$home/Projects/notes",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "vscode-presentation",
-		"rootPath": "$home/Projects/presentations/vscode",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "travel-checklist",
-		"rootPath": "$home/Projects/travel-checklist",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "pathway-library-presentation",
-		"rootPath": "$home/Projects/presentations/pathway-library",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "gulp-boilerplate",
-		"rootPath": "$home/Projects/gulp-boilerplate",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "style-guides",
-		"rootPath": "$home/Projects/guides",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "mac-dev-tools",
-		"rootPath": "$home/Projects/mac-dev-tools",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "solution_unison",
-		"rootPath": "$home/Projects/orion/solution_unison",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "jira-cards-printing",
-		"rootPath": "$home/Projects/orion/jira-cards-printing",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "synopsis",
-		"rootPath": "$home/Projects/cronos/synopsis",
-		"paths": [],
-		"group": ""
-	},
-	{
 		"name": "ansible-dotfiles",
 		"rootPath": "$home/Projects/ansible-dotfiles",
 		"paths": [],
@@ -80,12 +20,6 @@
 	{
 		"name": "iread",
 		"rootPath": "$home/Projects/iread",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "flibusta-docker-mysql",
-		"rootPath": "$home/Projects/flibusta-docker-mysql",
 		"paths": [],
 		"group": ""
 	}
