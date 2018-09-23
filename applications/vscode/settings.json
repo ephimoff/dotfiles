@@ -65,6 +65,7 @@
     },
     "gitlens.historyExplorer.enabled": true,
     "extensions.ignoreRecommendations": false,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "git.autofetch": true
 }
 

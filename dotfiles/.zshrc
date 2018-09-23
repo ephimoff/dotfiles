@@ -24,7 +24,7 @@ POWERLEVEL9K_TIME_FOREGROUND='grey'
 
 # plugins to load (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # shellcheck disable=SC2034
-plugins=(git autojump npm copydir osx brew docker)
+plugins=(git zsh-autosuggestions npm copydir osx brew docker zsh-syntax-highlighting)
 # shellcheck disable=SC1090
 source $ZSH/oh-my-zsh.sh
 
@@ -36,6 +36,8 @@ eval "$(rbenv init - zsh)"
 # orion: graviton
 export PATH="$HOME/Projects/orion/rgrav:$PATH"
 export PATH="$HOME/.usr/graviton-cli/bin:$PATH"
+# orion: config flow
+export PATH="$HOME/Projects/orion/flow-playbooks:$PATH"
 
 
 # go
@@ -78,3 +80,4 @@ setopt no_auto_remove_slash
 # shellcheck disable=SC2206
 fpath=(/usr/local/share/zsh-completions $fpath)
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
