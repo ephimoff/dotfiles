@@ -22,5 +22,11 @@
 		"rootPath": "$home/Projects/iread",
 		"paths": [],
 		"group": ""
+	},
+	{
+		"name": "swym",
+		"rootPath": "$home/Projects/swym",
+		"paths": [],
+		"group": ""
 	}
 ]

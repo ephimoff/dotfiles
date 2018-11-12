@@ -9,14 +9,12 @@ alias -- -="cd -"
 alias g="git"
 alias h="history"
 alias o="open"
-alias oo="open ."
 alias pro="cd ~/Projects"
 alias v="vim"
 alias va="vagrant"
 alias vi="vim"
 alias x+="chmod +x"
 alias -- +x="chmod +x"
-alias vs="code ."
 
 # grep/ack
 alias grep='grep -I'
