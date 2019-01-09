@@ -66,6 +66,8 @@
     "gitlens.historyExplorer.enabled": true,
     "extensions.ignoreRecommendations": false,
     "window.zoomLevel": 0,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true
 }
 

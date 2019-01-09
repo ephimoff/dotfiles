@@ -28,5 +28,11 @@
 		"rootPath": "$home/Projects/swym",
 		"paths": [],
 		"group": ""
+	},
+	{
+		"name": "db-training-docker",
+		"rootPath": "$home/Projects/orion/training/db-training-docker",
+		"paths": [],
+		"group": ""
 	}
 ]
