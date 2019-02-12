@@ -4,7 +4,7 @@
     "shortcut_name" : "RedoLastMove"
   },
   {
-    "shortcut_key_binding" : null,
+    "shortcut_key_binding" : "ctrl+pagedown",
     "shortcut_name" : "MakeSmaller"
   },
   {
@@ -44,7 +44,7 @@
     "shortcut_name" : "MoveToPreviousDisplay"
   },
   {
-    "shortcut_key_binding" : "shift+pageup",
+    "shortcut_key_binding" : "ctrl+pageup",
     "shortcut_name" : "MoveToFullscreen"
   },
   {
@@ -52,15 +52,15 @@
     "shortcut_name" : "MoveToNextThird"
   },
   {
-    "shortcut_key_binding" : "shift+home",
+    "shortcut_key_binding" : "ctrl+home",
     "shortcut_name" : "MoveToLeftHalf"
   },
   {
-    "shortcut_key_binding" : "alt+cmd+c",
+    "shortcut_key_binding" : null,
     "shortcut_name" : "MoveToCenter"
   },
   {
-    "shortcut_key_binding" : "shift+end",
+    "shortcut_key_binding" : "ctrl+end",
     "shortcut_name" : "MoveToRightHalf"
   },
   {

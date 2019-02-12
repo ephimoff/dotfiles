@@ -3,36 +3,49 @@
 		"name": "dotfiles",
 		"rootPath": "$home/Projects/dotfiles",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": "ansible-dotfiles",
 		"rootPath": "$home/Projects/ansible-dotfiles",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": "dotfiles-min",
 		"rootPath": "$home/Projects/dotfiles-min",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": "iread",
 		"rootPath": "$home/Projects/iread",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": "swym",
 		"rootPath": "$home/Projects/swym",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": "db-training-docker",
 		"rootPath": "$home/Projects/orion/training/db-training-docker",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "katas",
+		"rootPath": "/Users/antone/Projects/katas",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]
