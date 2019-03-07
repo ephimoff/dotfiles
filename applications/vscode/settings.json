@@ -29,13 +29,10 @@
         "MD024": false,
         "MD033": false,
         "MD040": false,
-        "MD007": { "indent": 4 }
+        "MD007": { "indent": 2 }
     },
     // Sets how line-breaks are rendered in the markdown preview. Setting it to 'true' creates a <br> for every newline.
     "markdown.preview.breaks": true,
-    // Markdown TOC
-    "markdown-toc.depthFrom":2,
-    "markdown-toc.updateOnSave":false,
 
     // Terminal
     "terminal.integrated.cursorStyle": "line",
@@ -63,11 +60,10 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
-    "gitlens.historyExplorer.enabled": true,
     "extensions.ignoreRecommendations": false,
     "window.zoomLevel": 0,
     "git.autofetch": true,
     "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true
+    "gitlens.views.lineHistory.enabled": true,
 }
 
