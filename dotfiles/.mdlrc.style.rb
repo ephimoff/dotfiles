@@ -6,3 +6,4 @@ exclude_rule 'MD033' # Inline HTML
 exclude_rule 'MD040' # Code blocks should have a language
 
 rule 'MD007', :indent => 2 # Unordered list indentation
+rule 'MD024', :siblings_only => true
