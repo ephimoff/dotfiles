@@ -14,7 +14,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # powerlevel9k customisation
 # shellcheck disable=SC2034
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 # shellcheck disable=SC2034
 POWERLEVEL9K_TIME_BACKGROUND='black'
 # shellcheck disable=SC2034

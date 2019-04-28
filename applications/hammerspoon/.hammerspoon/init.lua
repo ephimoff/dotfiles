@@ -57,6 +57,8 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "M", function()
       {"Mail", nil, laptopScreen, hs.layout.left50, nil, nil},
       {"Spark", nil, laptopScreen, hs.layout.left50, nil, nil},
       {"Google Chrome", nil, laptopScreen, hs.layout.left50, nil, nil},
+      {"Finder", nil, laptopScreen, hs.layout.left50, nil, nil},
+      {"Preview", nil, laptopScreen, hs.layout.left50, nil, nil},
 
       -- right
       {"1Password 7", nil, laptopScreen, hs.layout.right50, nil, nil},
@@ -89,8 +91,10 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "L", function()
       {"Spark", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"Fantastical", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"Notion", nil, laptopScreen, hs.layout.maximized, nil, nil},
+      {"Finder", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"Microsoft Teams", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"Microsoft Excel", nil, laptopScreen, hs.layout.maximized, nil, nil},
+      {"Preview", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"iTunes", "iTunes", laptopScreen, hs.layout.maximized, nil, nil},
   }
   hs.layout.apply(windowLayout)
