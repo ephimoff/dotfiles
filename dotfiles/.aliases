@@ -46,13 +46,9 @@ alias lc='lt -c'         # Lists sorted by date, most recent last, shows change 
 alias lu='lt -u'         # Lists sorted by date, most recent last, shows access time.
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew and their installed packages
-alias update='brew update; brew upgrade; brew cleanup; npm -g update'
+alias update='brew update; brew upgrade; brew cleanup;'
 
 # docker
 alias d='docker'
 alias dc='docker-compose'
-
-# orion
-alias rdep="rgrav deploy -R unison_frontend:0 -R unison_backend:0 -R unison_haproxy:0 -R connect:0 -p ec2"
-alias rinv="rgrav invoke -p ec2"
 
