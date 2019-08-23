@@ -52,3 +52,6 @@ alias update='brew update; brew upgrade; brew cleanup;'
 alias d='docker'
 alias dc='docker-compose'
 
+# aws
+alias mfa='. ~/.scripts/aws-mfa.sh $@'
+

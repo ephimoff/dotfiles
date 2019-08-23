@@ -94,7 +94,7 @@
     st = status
 
 [user]
-	email = a.ephimoff@gmail.com
+	email = anton.efimov@auto1.com
 	name = Anton Efimov
 [credential]
 	helper = osxkeychain

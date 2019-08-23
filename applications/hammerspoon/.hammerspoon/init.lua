@@ -49,7 +49,7 @@ end)
 
 -- external monitor layout
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "M", function()
-  local laptopScreen = "DELL P2416D"
+  local laptopScreen = "Q27P1B"
   local windowLayout = {
       -- left
       {"Safari", nil, laptopScreen, hs.layout.left50, nil, nil},
@@ -65,7 +65,8 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "M", function()
       {"Terminal", nil, laptopScreen, hs.layout.right50, nil, nil},
       {"Notes", nil, laptopScreen, hs.layout.right50, nil, nil},
       {"Messages", nil, laptopScreen, hs.layout.right30, nil, nil},
-      {"Microsoft Teams", nil, laptopScreen, hs.layout.right50, nil, nil},
+      -- {"Microsoft Teams", nil, laptopScreen, hs.layout.right50, nil, nil},
+      {"Slack", nil, laptopScreen, hs.layout.right50, nil, nil},
 
       -- maximised
       {"Fantastical", nil, laptopScreen, hs.layout.maximized, nil, nil},
@@ -86,13 +87,14 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "L", function()
       {"Terminal", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"Code", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"Notes", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Messages", nil, laptopScreen, hs.layout.right30, nil, nil},
+      {"Messages", nil, laptopScreen, hs.layout.right50, nil, nil},
       {"Mail", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"Spark", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"Fantastical", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"Notion", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"Finder", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Microsoft Teams", nil, laptopScreen, hs.layout.maximized, nil, nil},
+      -- {"Microsoft Teams", nil, laptopScreen, hs.layout.maximized, nil, nil},
+      {"Slack", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"Microsoft Excel", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"Preview", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"iTunes", "iTunes", laptopScreen, hs.layout.maximized, nil, nil},

@@ -36,18 +36,7 @@
 
     // Terminal
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cursorBlinking": true,
-
-
-    // eslint
-    "eslint.validate": [
-        "javascript",
-        "vue",
-    ],
-    
-
-    // js
-    "javascript.suggestionActions.enabled": false,
+    "terminal.integrated.cursorBlinking": true,    
 
     // Git Lens
     "gitlens.advanced.messages": {

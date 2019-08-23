@@ -30,14 +30,18 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 # rbenv
-eval "$(rbenv init - zsh)"
+# eval "$(rbenv init - zsh)"
 
 
 # orion: graviton
-export PATH="$HOME/Projects/orion/rgrav:$PATH"
-export PATH="$HOME/.usr/graviton-cli/bin:$PATH"
-# orion: config flow
-export PATH="$HOME/Projects/orion/flow-playbooks:$PATH"
+# export PATH="$HOME/Projects/orion/rgrav:$PATH"
+# export PATH="$HOME/.usr/graviton-cli/bin:$PATH"
+# # orion: config flow
+# export PATH="$HOME/Projects/orion/flow-playbooks:$PATH"
+
+# aws
+export PATH="$HOME/Library/Python/3.7/bin:$PATH"
+# export PATH=~/.local/bin:$PATH
 
 
 # go
@@ -81,3 +85,6 @@ setopt no_auto_remove_slash
 fpath=(/usr/local/share/zsh-completions $fpath)
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/vault vault
