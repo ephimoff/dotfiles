@@ -1,12 +1,6 @@
 # custom scripts
 [[ -d "$HOME/Projects/scripts" ]] && PATH="$PATH:$HOME/Projects/scripts"
 
-# rgrav
-[[ -d "$HOME/Projects/orion/rgrav" ]] && PATH="$PATH:$HOME/Projects/orion/rgrav"
-
-# oracle sqlplus
-[[ -d "/Library/Oracle/instantclient" ]] && PATH="/Library/Oracle/instantclient:$PATH"
-
 # Path to git diff utility.  Add the following to ~/.gitconfig
 [[ -d /usr/local/opt/git/share/git-core/contrib/diff-highlight ]] && PATH="/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH"
 
