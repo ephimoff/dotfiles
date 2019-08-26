@@ -1,0 +1,28 @@
+tap "caskroom/cask"
+tap "caskroom/fonts"
+tap "caskroom/versions"
+tap "homebrew/core"
+brew "shellcheck"
+brew "tldr"
+brew "vim"
+brew "zsh"
+brew "zsh-completions"
+cask "1password"
+cask "bettertouchtool"
+cask "docker"
+cask "dropbox"
+cask "flycut"
+cask "font-fira-code"
+cask "google-chrome"
+cask "hammerspoon"
+cask "macmediakeyforwarder"
+cask "karabiner-elements"
+cask "notion"
+cask "numi"
+cask "qlstephen"
+cask "sequel-pro"
+cask "visual-studio-code"
+mas "Amphetamine", id: 937984704
+mas "The Unarchiver", id: 425424353
+mas "Pixelmator", id: 407963104
+mas "Reeder 3", id: 880001334
