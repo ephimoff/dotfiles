@@ -3,6 +3,10 @@ spoon.ReloadConfiguration:start()
 
 local cmd_alt_ctrl = {"cmd", "alt", "ctrl"}
 
+hs.hotkey.bind({}, "f13", function()
+  hs.application.launchOrFocus("/Applications/Fantastical 2.app")
+end)
+
 -- go Left
 hs.hotkey.bind(cmd_alt_ctrl, "Left", function()
   local win = hs.window.focusedWindow()
@@ -80,7 +84,7 @@ hs.hotkey.bind(cmd_alt_ctrl, "M", function()
       {"Google Chrome", nil, laptopScreen, hs.layout.left50, nil, nil},
       {"Telegram", nil, laptopScreen, hs.layout.left50, nil, nil},
       {"Skype", nil, laptopScreen, hs.layout.left50, nil, nil},
-      -- {"Spark", nil, laptopScreen, hs.layout.left50, nil, nil},
+      {"Spark", nil, laptopScreen, hs.layout.left50, nil, nil},
 
       -- right
       {"Notes", nil, laptopScreen, hs.layout.right50, nil, nil},
@@ -129,8 +133,8 @@ hs.hotkey.bind(cmd_alt_ctrl, "L", function()
       {"Notion", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"Slack", nil, laptopScreen, hs.layout.maximized, nil, nil},
       {"Sequel Pro", nil, laptopScreen, hs.layout.maximized, nil, nil},
+      {"Spark", nil, laptopScreen, hs.layout.maximized, nil, nil},
       -- {"Microsoft Excel", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      -- {"Spark", nil, laptopScreen, hs.layout.maximized, nil, nil},
   }
   hs.layout.apply(windowLayout)
 end)
