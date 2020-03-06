@@ -107,7 +107,7 @@ end)
 
 -- laptop monitor layout
 hs.hotkey.bind(cmd_alt_ctrl, "L", function()
-  local laptopScreen = "Color LCD"
+  local laptopScreen = "Colour LCD"
   local windowLayout = {
       -- left
       {"Reminders", nil, laptopScreen, hs.layout.left50, nil, nil},
