@@ -22,7 +22,6 @@ cask "numi"
 cask "postman"
 cask "qlstephen"
 cask "sequel-pro"
-cask "sequel-pro"
 cask "visual-studio-code"
 mas "Amphetamine", id: 937984704
 mas "The Unarchiver", id: 425424353
