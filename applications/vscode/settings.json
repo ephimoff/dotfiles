@@ -7,7 +7,7 @@
 
     // Appearance and behaviour
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Alabaster",
+    "workbench.colorTheme": "Monokai",
     "material-icon-theme.showUpdateMessage": false,
     "window.restoreFullscreen": true,
     "workbench.commandPalette.preserveInput":true,
@@ -54,5 +54,8 @@
     "git.autofetch": true,
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
+    "breadcrumbs.enabled": true,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "none"
 }
 
