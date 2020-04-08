@@ -9,5 +9,70 @@
         "key": "shift+cmd+d",
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+numpad1",
+        "command": "org.insertHeadingRespectContent",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+alt+o h",
+        "command": "-org.insertHeadingRespectContent",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+alt+o h",
+        "command": "-org.insertHeadingRespectContent",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+down",
+        "command": "org.doDemote",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+alt+o shift+d",
+        "command": "-org.doDemote",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+alt+o shift+d",
+        "command": "-org.doDemote",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+up",
+        "command": "org.doPromote",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+alt+o shift+p",
+        "command": "-org.doPromote",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+alt+o h",
+        "command": "-org.insertHeadingRespectContent",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+numpad2",
+        "command": "org.insertSubheading",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+alt+o s",
+        "command": "-org.insertSubheading",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+numpad0",
+        "command": "org.timestamp",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+alt+o t",
+        "command": "-org.timestamp",
+        "when": "editorLangId == 'org'"
     }
 ]

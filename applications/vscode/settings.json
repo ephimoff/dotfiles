@@ -1,14 +1,13 @@
 // Place your settings in this file to overwrite the default settings
 {
-    // Adding Fira Code font
+    // Appearance
     "editor.fontFamily": "Fira Code",
     "editor.fontSize": 12,
     "editor.fontLigatures": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons",
 
-    // Appearance and behaviour
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Monokai",
-    "material-icon-theme.showUpdateMessage": false,
+    // Behaviour
     "window.restoreFullscreen": true,
     "workbench.commandPalette.preserveInput":true,
     "workbench.startupEditor": "newUntitledFile",
@@ -20,6 +19,9 @@
     // Git
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
 
     // Markdown related
     "markdownlint.config": {
@@ -29,7 +31,7 @@
         "MD014": false,
         "MD024": {"siblings_only": true},
         "MD033": false,
-        "MD040": false,
+        "MD040": false
     },
     // Sets how line-breaks are rendered in the markdown preview. Setting it to 'true' creates a <br> for every newline.
     "markdown.preview.breaks": true,
@@ -50,12 +52,7 @@
         "suppressShowKeyBindingsNotice": true
     },
     "extensions.ignoreRecommendations": false,
-    "window.zoomLevel": 0,
-    "git.autofetch": true,
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
-    "breadcrumbs.enabled": true,
-    "editor.renderControlCharacters": false,
-    "editor.renderWhitespace": "none"
+    "window.zoomLevel": 0
+    
 }
 
