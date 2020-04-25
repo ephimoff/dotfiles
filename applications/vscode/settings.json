@@ -51,8 +51,11 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
+
     "extensions.ignoreRecommendations": false,
     "window.zoomLevel": 0,
+
+    "jest.pathToJest": "app/server/node_modules/.bin/jest"
     
 }
 
