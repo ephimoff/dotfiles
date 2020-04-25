@@ -31,7 +31,7 @@
         "MD014": false,
         "MD024": {"siblings_only": true},
         "MD033": false,
-        "MD040": false,
+        "MD040": false
     },
     // Sets how line-breaks are rendered in the markdown preview. Setting it to 'true' creates a <br> for every newline.
     "markdown.preview.breaks": true,
