@@ -11,6 +11,11 @@ module.exports = {
       ]),
       browser: "Google Chrome"
     },
+    {
+      // Open these urls in Chrome
+      match: ({ url }) => url.pathname.includes("wkda"),
+      browser: "Google Chrome"
+    },
     // {
     //   // Open these urls in Slack app
     //   match: finicky.matchHostnames([

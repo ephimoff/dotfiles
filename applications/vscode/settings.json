@@ -1,61 +1,84 @@
 // Place your settings in this file to overwrite the default settings
 {
-    // Appearance
-    "editor.fontFamily": "Fira Code",
-    "editor.fontSize": 12,
-    "editor.fontLigatures": true,
-    "workbench.colorTheme": "One Dark Pro",
-    "workbench.iconTheme": "vscode-icons",
+  // Appearance
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 12,
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.quickSuggestionsDelay": 1,
+  "editor.tabSize": 2, // THIS WILL TRIGGER PRETTIER ON SAVE
 
-    // Behaviour
-    "window.restoreFullscreen": true,
-    "workbench.commandPalette.preserveInput":true,
-    "workbench.startupEditor": "newUntitledFile",
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-    "editor.quickSuggestionsDelay": 0,
-    "editor.tabSize": 2,
-    
-    // Git
-    "git.confirmSync": false,
-    "git.enableSmartCommit": true,
-    "git.autofetch": true,
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "vscode-icons",
 
-    // Markdown related
-    "markdownlint.config": {
-        "default": true,
-        "MD007": { "indent": 2 },
-        "MD013": false,
-        "MD014": false,
-        "MD024": {"siblings_only": true},
-        "MD033": false,
-        "MD040": false
-    },
-    // Sets how line-breaks are rendered in the markdown preview. Setting it to 'true' creates a <br> for every newline.
-    "markdown.preview.breaks": true,
+  "window.restoreFullscreen": true,
+  "workbench.commandPalette.preserveInput": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
 
-    // Terminal
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cursorBlinking": true,    
+  // Git
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
 
-    // Git Lens
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true
-    },
+  // Markdown related
+  "markdownlint.config": {
+    "default": true,
+    "MD007": { "indent": 2 },
+    "MD013": false,
+    "MD014": false,
+    "MD024": { "siblings_only": true },
+    "MD033": false,
+    "MD040": false
+  },
+  // Sets how line-breaks are rendered in the markdown preview. Setting it to 'true' creates a <br> for every newline.
+  "markdown.preview.breaks": true,
 
-    "extensions.ignoreRecommendations": false,
-    "window.zoomLevel": 0,
+  // Terminal
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
 
-    "jest.pathToJest": "app/server/node_modules/.bin/jest"
-    
+  // Git Lens
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+
+  "extensions.ignoreRecommendations": false,
+  "window.zoomLevel": 0,
+
+  "jest.pathToJest": "app/server/node_modules/.bin/jest",
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "prettier.packageManager": "yarn",
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.jsxBracketSameLine": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
-

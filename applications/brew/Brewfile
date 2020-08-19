@@ -6,17 +6,14 @@ brew "tldr"
 brew "vim"
 brew "zsh"
 cask "1password"
-cask "docker"
 cask "dropbox"
 cask "fantastical"
 cask "finicky"
 cask "font-fira-code"
 cask "google-chrome"
 cask "hammerspoon"
-cask "hiddenbar"
 cask "karabiner-elements"
 cask "maccy"
-cask "numi"
 cask "postman"
 cask "qlstephen"
 cask "sequel-pro"
@@ -26,10 +23,7 @@ mas "Amphetamine", id: 937984704
 mas "The Unarchiver", id: 425424353
 mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
-mas "Up Next", id: 1355117041
-mas "Next Meeting", id: 1017470484
 mas "Adblock Plus", id: 1432731683
-mas "Tot", id: 1491071483
 mas "Clocker", id: 1056643111
 
  
