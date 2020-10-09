@@ -32,13 +32,6 @@ source $ZSH/oh-my-zsh.sh
 # rbenv
 # eval "$(rbenv init - zsh)"
 
-
-# orion: graviton
-# export PATH="$HOME/Projects/orion/rgrav:$PATH"
-# export PATH="$HOME/.usr/graviton-cli/bin:$PATH"
-# # orion: config flow
-# export PATH="$HOME/Projects/orion/flow-playbooks:$PATH"
-
 # aws
 export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 # export PATH=~/.local/bin:$PATH
@@ -51,7 +44,7 @@ export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 # export PATH=$PATH:/usr/local/mongodb/bin
 
 # ssh
-export SSH_KEY_PATH="$HOME/.ssh/rsa_id"
+export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
 
 # scripts
 export PATH="$HOME/Projects/scripts:$PATH"
