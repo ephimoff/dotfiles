@@ -58,6 +58,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 # Add all known keys to the SSH agent
 ssh-add -A 2>/dev/null;
+ssh-add -K ~/.ssh/id_rsa_auto1 2>/dev/null;
 
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,

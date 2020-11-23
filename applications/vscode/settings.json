@@ -80,5 +80,8 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "prettier.disableLanguages": [
+    "yml, yaml"
+  ]
 }
