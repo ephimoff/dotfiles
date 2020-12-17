@@ -14,18 +14,15 @@ cask "google-chrome"
 cask "hammerspoon"
 cask "karabiner-elements"
 cask "maccy"
-cask "postman"
-cask "qlstephen"
 cask "sequel-pro"
 cask "telegram"
 cask "visual-studio-code"
 mas "Amphetamine", id: 937984704
-mas "The Unarchiver", id: 425424353
+mas "Bear", id: 1091189122
+mas "KeyKey", id: 1035137927
+mas "Monosnap", id: 540348655
 mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
-mas "Adblock Plus", id: 1432731683
-mas "Clocker", id: 1056643111
-mas "Monosnap", id: 540348655
-mas "KeyKey", id: 1035137927
+mas "The Unarchiver", id: 425424353
 
  
