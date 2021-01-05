@@ -1,0 +1,16 @@
+name: Bootstrapping
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Install Brew
+        run: |
+          bash install/0-brew-install.sh
+      - name: Run Install Directories
+        run: |
+          bash install/1-directories.sh

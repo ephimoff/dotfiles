@@ -1,0 +1,13 @@
+name: Dotfiles config
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Symlink dotfiles to home directory
+        run: |
+          bash install/4-dotfiles.sh
