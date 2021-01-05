@@ -8,6 +8,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          path: 'Projects/dotfiles'
       - name: Symlink dotfiles to home directory
         run: |
           bash install/4-dotfiles.sh

@@ -26,7 +26,7 @@ POWERLEVEL9K_TIME_FOREGROUND='grey'
 # shellcheck disable=SC2034
 plugins=(git zsh-autosuggestions npm copydir osx brew docker zsh-syntax-highlighting)
 # shellcheck disable=SC1090
-source $ZSH/oh-my-zsh.sh
+source "$ZSH/oh-my-zsh.sh"
 
 # User configuration
 # rbenv
