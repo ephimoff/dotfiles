@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+###############################################################################
+# Visual Studio Code
+###############################################################################
+
+echo "Terminal: Open Light theme"
+open "${HOME}/Projects/dotfiles/applications/terminal/Snazzy.terminal"
+
+echo "Terminal: Make Snazzy theme the default one"
+defaults write com.apple.Terminal 'Default Window Settings' -string Snazzy
+defaults write com.apple.Terminal 'Startup Window Settings' -string Snazzy
+
+echo "Terminal: Disable the annoying line marks"
+defaults write com.apple.Terminal ShowLineMarks -int 0

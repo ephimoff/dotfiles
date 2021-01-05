@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+###############################################################################
+# macOS Keybindings
+# see https://github.com/ttscoff/KeyBindings for reference
+###############################################################################
+
+keybindingsSource=$HOME/Projects/applications/keybindings/DefaultKeyBinding.dict
+
+keybindingsTarget=$HOME/Library/KeyBindings
+
+echo "Keybindings: Linking config file"
+if [[ -f "$keybindingsSource" ]] ; then
+    echo "Keybindings: Remove shortcuts files if already exists"
+    [[ -f "$keybindingsTarget" ]] && rm -rf "$keybindingsTarget"
+    echo "Keybindings: create folder if doesn't exist"
+    [[ -d "$keybindingsTarget" ]] && mkdir "$keybindingsTarget"
+    ln -s "$keybindingsSource" "$keybindingsTarget/DefaultKeyBinding.dict"
+fi

@@ -1,0 +1,18 @@
+language: objective-c
+
+os: osx
+osx_image: xcode12.3
+
+# Turn off email notifications entirely:
+notifications:
+  email: false
+
+addons:
+  homebrew:
+    packages:
+      - shellcheck
+
+script:
+  - ./tests/1_lint_files.sh
+  - ./tests/2_apply_dotfiles.sh
+  - ./tests/3_test_dotfiles.sh

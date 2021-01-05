@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+###############################################################################
+# Karabiner Elements.app
+###############################################################################
+
+karabinerSource=$HOME/Projects/dotfiles/applications/karabiner/karabiner/
+
+karabinerTarget=$HOME/.config/karabiner
+
+echo "Karabiner: Linking config file"
+if [[ -f "$karabinerSource" ]] ; then
+    echo "Karabiner: Remove shortcuts files if already exists"
+    [[ -f "$karabinerTarget" ]] && rm -rf "$karabinerTarget"
+    ln -s "$karabinerSource" "$karabinerTarget"
+fi

@@ -1,5 +1,5 @@
 module.exports = {
-  defaultBrowser: 'Safari',
+  defaultBrowser: 'Brave Browser',
   handlers: [
     {
       // Open these urls in Chrome

@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 
-# https://www.juev.org/2020/04/12/dotfiles/
+# Start
+echo "Starting $(basename "$0"). Note: it may take a while"
 
 # Ask for the administrator password upfront
 sudo -v
 
-## create folders
-# ssh
-[[ ! -d ~/.ssh ]] && mkdir -p ~/.ssh
-chmod 700 ~/.ssh
-
 # Install everything from a Brewfile
 brew bundle --file="${HOME}/Projects/dotfiles/applications/brew/Brewfile"
+
+echo "Cleaning up unneeded files..."
 brew cleanup
+
+# Finished
+echo "$(basename "$0") complete."
