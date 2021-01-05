@@ -4,7 +4,7 @@
 echo "Starting $(basename "$0")"
 
 # Ask for the administrator password upfront
-sudo -v
+# sudo -v
 
 echo "Closing any open System Preferences panes, to prevent them from overriding settings we’re about to change"
 osascript -e 'tell application "System Preferences" to quit'

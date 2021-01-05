@@ -7,6 +7,7 @@ IFS=$'\n'
 # install additional tools
 [[ ! -f "$(command -v mdl)" ]] && gem install mdl
 [[ ! -f "$(command -v yaml-lint)" ]] && gem install yaml-lint
+[[ ! -f "$(command -v shellcheck)" ]] && gem install shellcheck
 
 # create a list of mdl rules to ignore
 if [[ ! -f ~/.mdlrc ]] ; then
