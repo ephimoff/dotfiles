@@ -17,4 +17,4 @@ jobs:
           ruby-version: 2.6
       - name: Install dependencies
         run: |
-          bash test/1_lint_files.sh
+          bash tests/1_lint_files.sh

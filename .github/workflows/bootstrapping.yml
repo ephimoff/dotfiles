@@ -10,13 +10,16 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install Brew
         run: |
-          bash install/0-brew-install.sh
+          bash install/brew-install.sh
+
       - name: Setup Directories
         run: |
-          bash install/1-directories.sh
+          bash install/directories.sh
+
       - name: Install brew packages and casks
         run: |
-          bash install/3-brew.sh
+          bash install/brew.sh
+
       - name: Copy apps config
         run: |
           bash install/5-applications.sh

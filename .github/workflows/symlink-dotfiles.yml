@@ -12,4 +12,4 @@ jobs:
           path: 'Projects/dotfiles'
       - name: Symlink dotfiles to home directory
         run: |
-          bash install/4-dotfiles.sh
+          bash install/dotfiles.sh

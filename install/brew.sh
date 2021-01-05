@@ -4,7 +4,7 @@
 echo "Starting $(basename "$0"). Note: it may take a while"
 
 # Ask for the administrator password upfront
-sudo -v
+# sudo -v
 
 # Install everything from a Brewfile
 brew bundle --file="${HOME}/Projects/dotfiles/applications/brew/Brewfile"

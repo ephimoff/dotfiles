@@ -10,4 +10,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run macOS preferences
         run: |
-          bash install/2-macos.sh
+          bash install/macos.sh
