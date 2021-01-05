@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - uses: actions/checkout@v2
@@ -16,6 +16,5 @@ jobs:
         with:
           ruby-version: 2.6
       - name: Install dependencies
-        run: gem install mdl
-      - name: Run tests
-        run: mdl -r ~MD013,~MD029,~MD033 README.md
+        run: |
+          bash test/1_lint_files.sh

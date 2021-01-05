@@ -52,5 +52,6 @@ alias d='docker'
 alias dc='docker-compose'
 
 # aws
+# shellcheck disable=SC2142
 alias mfa='. ~/.scripts/aws-mfa.sh $@'
 

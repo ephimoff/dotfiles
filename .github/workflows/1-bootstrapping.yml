@@ -8,9 +8,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Run Install Brew
+      - name: Install Brew
         run: |
           bash install/0-brew-install.sh
-      - name: Run Install Directories
+      - name: Setup Directories
         run: |
           bash install/1-directories.sh
+      - name: Install brew packages and casks
+        run: |
+          bash install/3-brew.sh
+      - name: Copy apps config
+        run: |
+          bash install/5-applications.sh
