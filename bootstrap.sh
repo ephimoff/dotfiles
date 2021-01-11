@@ -8,7 +8,7 @@ echo "Note that some of these changes require a logout/restart to take effect."
 # "$directory/clone_dotfiles.sh"
 ./install/brew-install.sh
 ./install/directories.sh
-./install/macos.sh
+# ./install/macos.sh
 ./install/brew.sh
 ./install/dotfiles.sh
 ./install/applications.sh

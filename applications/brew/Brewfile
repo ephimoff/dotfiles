@@ -12,11 +12,11 @@ cask "finicky"
 cask "font-fira-code"
 cask "google-chrome"
 cask "hammerspoon"
-cask "karabiner-elements"
 cask "maccy"
 cask "sequel-pro"
 cask "telegram"
 cask "visual-studio-code"
+cask "whatsapp"
 mas "Amphetamine", id: 937984704
 mas "Bear", id: 1091189122
 mas "KeyKey", id: 1035137927
