@@ -1,0 +1,15 @@
+name: emojis
+parent: default
+
+matches:
+  - trigger: ':lol'
+    replace: '😂'
+
+  - trigger: ':tu'
+    replace: '👍'
+
+  - trigger: ':td'
+    replace: '👎'
+
+  - trigger: ':shrug'
+    replace: '¯\(ツ)/¯'

@@ -1,0 +1,14 @@
+name: emails
+parent: default
+
+matches:
+  # Formal signature
+  - trigger: ':sigf'
+    replace: |
+      Best regards,
+      Anton Efimov
+  # Informal signature
+  - trigger: ':sigi'
+    replace: |
+      Cheers,
+      Anton
