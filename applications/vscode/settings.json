@@ -83,5 +83,9 @@
   },
   "prettier.disableLanguages": [
     "yml, yaml"
+  ],
+  "cSpell.language": "en-GB",
+  "cSpell.userWords": [
+    "timeframes"
   ]
 }

@@ -8,23 +8,23 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="agnoster"
+ZSH_THEME="fwalch"
 # shellcheck disable=SC2034
-ZSH_THEME="powerlevel9k/powerlevel9k"
+# ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # powerlevel9k customisation
 # shellcheck disable=SC2034
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 # shellcheck disable=SC2034
-POWERLEVEL9K_TIME_BACKGROUND='black'
+# POWERLEVEL9K_TIME_BACKGROUND='black'
 # shellcheck disable=SC2034
-POWERLEVEL9K_TIME_FOREGROUND='grey'
+# POWERLEVEL9K_TIME_FOREGROUND='grey'
 # Enable command auto-correction.
 #ENABLE_CORRECTION="true"
 
 # plugins to load (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # shellcheck disable=SC2034
-plugins=(git zsh-autosuggestions npm copydir osx brew docker zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions osx zsh-syntax-highlighting)
 # shellcheck disable=SC1090
 source "$ZSH/oh-my-zsh.sh"
 
@@ -33,7 +33,7 @@ source "$ZSH/oh-my-zsh.sh"
 # eval "$(rbenv init - zsh)"
 
 # aws
-export PATH="$HOME/Library/Python/3.7/bin:$PATH"
+# export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 # export PATH=~/.local/bin:$PATH
 
 
@@ -54,7 +54,7 @@ export PATH="$HOME/.scripts:$PATH"
 export PATH="/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH"
 
 # Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Add all known keys to the SSH agent
 ssh-add -A 2>/dev/null;
@@ -70,14 +70,14 @@ source "$HOME/.aliases"
 
 # Load functions
 # shellcheck disable=SC1090
-source "$HOME/.functions"
+# source "$HOME/.functions"
 
 # To retain the / added after completing directories or symbolic links to directories
-setopt no_auto_remove_slash
+# setopt no_auto_remove_slash
 
 # shellcheck disable=SC2206
 fpath=(/usr/local/share/zsh-completions $fpath)
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 
 autoload -U +X bashcompinit && bashcompinit
