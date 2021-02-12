@@ -28,7 +28,7 @@ git pull origin master
 
 Suggestions/improvements [welcome](https://github.com/ephimoff/dotfiles/issues)!
 
-## Acknowedgements
+## Acknowledgements
 
 - [Mathias Bynens](https://github.com/mathiasbynens)
 - [Craig Hurley](https://github.com/craighurley/dotfiles)

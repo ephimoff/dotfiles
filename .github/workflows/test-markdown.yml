@@ -1,4 +1,4 @@
-name: test_markdown - Test Markdown
+name: Lint files
 
 on: [push]
 
@@ -15,6 +15,6 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
-      - name: Install dependencies
+      - name: Lint files
         run: |
           bash tests/1_lint_files.sh
