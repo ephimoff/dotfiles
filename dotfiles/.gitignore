@@ -1,9 +1,6 @@
 # Compiled Python files
 *.pyc
 
-# vim
-*.swp
-
 .svn
 *.log
 tmp/**
