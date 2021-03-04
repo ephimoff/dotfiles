@@ -1,39 +1,27 @@
-# #!/usr/bin/env bash
+#!/usr/bin/env bash
 
-# echo "SSH: Configuring hosts (github, localhost etc.)"
-# [[ ! -d ~/.ssh ]] && mkdir -p ~/.ssh
-# chmod 700 ~/.ssh
+echo "SSH: Configuring hosts (github, localhost etc.)"
+[[ ! -d ~/.ssh ]] && mkdir -p ~/.ssh
+chmod 700 ~/.ssh
 
-# if [[ ! -f ~/.ssh/config ]] ; then
-#     cat << EOF > ~/.ssh/config
-# Host *
-#     TCPKeepAlive yes
-#     ServerAliveInterval 60
-#     ControlMaster auto
-#     ControlPath ~/.ssh/%C
-#     ControlPersist 30
-#     ConnectTimeout 5
+if [[ ! -f ~/.ssh/config ]] ; then
+    cat << EOF > ~/.ssh/config
+#personal account
+Host github.com
+	HostName github.com
+	User git
+  UseKeychain yes
+  AddKeysToAgent yes
+	IdentityFile ~/.ssh/id_rsa
 
-# Host github.com
-#     HostName ssh.github.com
-#     Port 443
-#     PasswordAuthentication no
-#     IdentitiesOnly yes
-#     IdentityFile ~/.ssh/id_rsa
+#auto1 account
+Host anton-efimov.github.com
+	HostName github.com
+	User git
+  UseKeychain yes
+  AddKeysToAgent yes
+	IdentityFile ~/.ssh/id_rsa_auto1
+EOF
+fi
 
-# Host gitlab.com
-#     HostName altssh.gitlab.com
-#     Port 443
-#     User git
-#     PasswordAuthentication no
-#     IdentitiesOnly yes
-#     IdentityFile ~/.ssh/id_rsa
-
-# Host 192.168.*.* *.local localhost
-#     UserKnownHostsFile /dev/null
-#     StrictHostKeyChecking no
-#     LogLevel ERROR
-# EOF
-# fi
-
-# [[ -f ~/.ssh/config ]] && chmod 600 ~/.ssh/config
+[[ -f ~/.ssh/config ]] && chmod 600 ~/.ssh/config
