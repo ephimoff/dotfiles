@@ -5,7 +5,7 @@ echo "SSH: Configuring hosts (github, localhost etc.)"
 chmod 700 ~/.ssh
 
 if [[ ! -f ~/.ssh/config ]] ; then
-    cat << EOF > ~/.ssh/config
+  cat << EOF > ~/.ssh/config
 #personal account
 Host github.com
 	HostName github.com

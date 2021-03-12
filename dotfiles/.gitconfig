@@ -41,5 +41,6 @@
 
 [user]
 	name = Anton Efimov
+	email = a.ephimoff@gmail.com
 [credential]
 	helper = osxkeychain
