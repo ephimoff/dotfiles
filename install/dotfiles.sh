@@ -3,8 +3,8 @@
 # Start
 echo "Starting $(basename "$0")"
 
-# directory="${HOME}/Projects/dotfiles/dotfiles"
-directory="../dotfiles"
+directory="${HOME}/Projects/dotfiles/dotfiles"
+# directory="../dotfiles"
 backup=~/.dotfiles_backup
 files=$(find "$directory" -iname ".*" -maxdepth 1 -type f)
 
