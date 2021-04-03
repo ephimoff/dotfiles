@@ -3,26 +3,10 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "federico-terzi/espanso"
 brew "espanso"
-brew "shellcheck"
-brew "tldr"
-brew "vim"
 brew "zsh"
-cask "1password"
-cask "brave-browser"
-cask "fantastical"
 cask "finicky"
 cask "font-fira-code"
-cask "google-chrome"
 cask "hammerspoon"
 cask "maccy"
 cask "sequel-pro"
-cask "telegram"
 cask "visual-studio-code"
-cask "whatsapp"
-mas "Amphetamine", id: 937984704
-mas "Bear", id: 1091189122
-mas "KeyKey", id: 1035137927
-mas "Monosnap", id: 540348655
-mas "Slack", id: 803453959
-mas "Spark", id: 1176895641
-mas "The Unarchiver", id: 425424353
