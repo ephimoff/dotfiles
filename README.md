@@ -1,7 +1,5 @@
 # Dotfiles and application preferences
 
-[![Build Status](https://travis-ci.org/ephimoff/dotfiles.svg?branch=master)](https://travis-ci.org/ephimoff/dotfiles)
-
 ## Installation
 
 1. Make sure you have GIT installed. Hint: it comes with the xcode command line tools `xcode-select --install`.
