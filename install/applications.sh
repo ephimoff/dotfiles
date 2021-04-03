@@ -2,7 +2,7 @@
 # Start
 echo "Starting $(basename "$0")"
 
-directory="preferences"
+directory="${HOME}/Projects/dotfiles/install/preferences"
 files=$(find "$directory" -iname ".*" -maxdepth 1 -type f)
 
 # shellcheck disable=SC2068
