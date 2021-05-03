@@ -36,6 +36,8 @@ source "$ZSH/oh-my-zsh.sh"
 # export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 # export PATH=~/.local/bin:$PATH
 
+# android simulator
+export ANDROID_SDK=/Users/antonefimov/Library/Android/sdk
 
 # go
 # export PATH="/usr/local/go/bin:$PATH"
@@ -47,8 +49,9 @@ source "$ZSH/oh-my-zsh.sh"
 export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
 
 # scripts
-export PATH="$HOME/Projects/scripts:$PATH"
-export PATH="$HOME/.scripts:$PATH"
+# export PATH="$HOME/Projects/scripts:$PATH"
+# export PATH="$HOME/.scripts:$PATH"
+export PATH="$HOME/Library/Android/sdk:$PATH"
 
 # pager
 export PATH="/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH"
@@ -58,7 +61,6 @@ export PATH="/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH"
 
 # Add all known keys to the SSH agent
 ssh-add -A 2>/dev/null;
-ssh-add -K ~/.ssh/id_rsa_auto1 2>/dev/null;
 
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,

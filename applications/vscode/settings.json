@@ -8,7 +8,7 @@
   "editor.quickSuggestionsDelay": 1,
   "editor.tabSize": 2, // THIS WILL TRIGGER PRETTIER ON SAVE
 
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Alabaster",
   "workbench.iconTheme": "vscode-icons",
 
   "window.restoreFullscreen": true,
@@ -21,8 +21,6 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.autofetch": true,
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
 
   // Markdown related
   "markdownlint.config": {
@@ -41,22 +39,9 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
 
-  // Git Lens
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true
-  },
-
   "extensions.ignoreRecommendations": false,
-  "window.zoomLevel": 0,
 
-  "jest.pathToJest": "app/server/node_modules/.bin/jest",
+  // "jest.pathToJest": "app/server/node_modules/.bin/jest",
   "eslint.packageManager": "yarn",
   "eslint.validate": [
     "javascript",
@@ -64,7 +49,6 @@
     "typescript",
     "typescriptreact"
   ],
-  "prettier.packageManager": "yarn",
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
   "prettier.jsxBracketSameLine": true,
@@ -81,12 +65,17 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "prettier.disableLanguages": [
-    "yml, yaml"
-  ],
   "cSpell.language": "en-GB",
-  "cSpell.userWords": [
-    "dotfiles",
-    "timeframes"
-  ]
+  "cSpell.userWords": ["dotfiles", "timeframes"],
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline"
+    },
+    "prettyhtml": {
+      "printWidth": 100,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": false
+    }
+  }
 }

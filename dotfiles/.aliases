@@ -9,8 +9,6 @@ alias -- -="cd -"
 alias g="git"
 alias h="history"
 alias o="open"
-alias pro="cd ~/Projects"
-alias va="vagrant"
 alias x+="chmod +x"
 alias -- +x="chmod +x"
 
@@ -45,8 +43,4 @@ alias ls="command ls -h ${colorflag}" # Always use color output for `ls`
 # docker
 alias d='docker'
 alias dc='docker-compose'
-
-# aws
-# shellcheck disable=SC2142
-alias mfa='. ~/.scripts/aws-mfa.sh $@'
 
