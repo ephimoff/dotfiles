@@ -13,3 +13,12 @@ matches:
 
   - trigger: ':shrug'
     replace: '¯\(ツ)/¯'
+
+  - trigger: ':rocket'
+    replace: '🚀'
+
+  - trigger: ':strong'
+    replace: '💪'
+
+  - trigger: ':handshake'
+    replace: '🤝'
