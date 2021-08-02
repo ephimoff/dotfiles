@@ -77,5 +77,6 @@
       "wrapAttributes": false,
       "sortAttributes": false
     }
-  }
+  },
+  "redhat.telemetry.enabled": false
 }

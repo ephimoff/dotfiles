@@ -1,22 +1,36 @@
 module.exports = {
-  // defaultBrowser: 'Brave Browser',
+  // browser names: 
+  // Brave Browser
+  // Google Chrome
+  // Safari
   defaultBrowser: 'Safari',
   handlers: [
     {
-      // Open these urls in Chrome
       match: finicky.matchHostnames([
-        'www.smartrecruiters.com',
+        // 'www.smartrecruiters.com',
         /.*\.google.com$/, // match all google subdomains
-        /wkdauto/,
-        /auto1/,
-        /wkda/,
+        /.*\.greenhouse.io$/, // match all google subdomains
       ]),
-      browser: 'Google Chrome',
+      browser: 'Brave Browser',
+    },
+    {
+      match: finicky.matchHostnames([
+        'app.qulture.rocks',
+        'miro.com',
+        'sumupteam.atlassian.net',
+        'sam-app.ro',
+      ]),
+      browser: 'Brave Browser',
     },
     {
       // Open these urls in Chrome
-      match: ({ url }) => url.pathname.includes('wkda'),
-      browser: 'Google Chrome',
+      match: ({ url }) => url.pathname.includes('sumupteam'),
+      browser: 'Brave Browser',
+    },
+    {
+      // Open these urls in Chrome
+      match: ({ url }) => url.pathname.includes('sumup'),
+      browser: 'Brave Browser',
     },
     // {
     //   // Open these urls in Slack app
