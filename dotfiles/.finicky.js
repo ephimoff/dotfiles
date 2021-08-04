@@ -10,6 +10,7 @@ module.exports = {
         // 'www.smartrecruiters.com',
         /.*\.google.com$/, // match all google subdomains
         /.*\.greenhouse.io$/, // match all google subdomains
+        /.*\.figma.com$/, // match all google subdomains
       ]),
       browser: 'Brave Browser',
     },
