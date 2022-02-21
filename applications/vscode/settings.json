@@ -8,7 +8,7 @@
   "editor.quickSuggestionsDelay": 1,
   "editor.tabSize": 2, // THIS WILL TRIGGER PRETTIER ON SAVE
 
-  "workbench.colorTheme": "Alabaster",
+  "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "vscode-icons",
 
   "window.restoreFullscreen": true,
@@ -78,5 +78,6 @@
       "sortAttributes": false
     }
   },
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "vsicons.dontShowNewVersionMessage": true
 }

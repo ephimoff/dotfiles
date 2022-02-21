@@ -3,10 +3,6 @@ spoon.ReloadConfiguration:start()
 
 local cmd_alt_ctrl = {"cmd", "alt", "ctrl"}
 
-hs.hotkey.bind({}, "f13", function()
-  hs.application.launchOrFocus("/Applications/Fantastical 2.app")
-end)
-
 -- go Left
 hs.hotkey.bind(cmd_alt_ctrl, "Left", function()
   local win = hs.window.focusedWindow()
@@ -56,13 +52,6 @@ hs.hotkey.bind(cmd_alt_ctrl, "Down", function()
   local screen = win:screen()
   local next = screen:next()
   local max = screen:frame()
-
-  -- hs.window
-
-  -- f.x = max.x
-  -- f.y = max.y
-  -- f.w = max.w
-  -- f.h = max.h
   win:moveToScreen(next, false, true, 0)
 end)
 
@@ -72,69 +61,74 @@ end)
 
 -- external monitor layout
 hs.hotkey.bind(cmd_alt_ctrl, "M", function()
-  local laptopScreen = "Q27P1B"
+  local targetScreen = "LG HDR 4K"
+  local secondaryScreen = "Colour LCD"
   local windowLayout = {
       -- left
-      {"Safari", nil, laptopScreen, hs.layout.left50, nil, nil},
-      {"Mail", nil, laptopScreen, hs.layout.left50, nil, nil},
-      {"Finder", nil, laptopScreen, hs.layout.left50, nil, nil},
-      {"Reminders", nil, laptopScreen, hs.layout.left50, nil, nil},
-      {"Preview", nil, laptopScreen, hs.layout.left50, nil, nil},
-      {"Code", nil, laptopScreen, hs.layout.left50, nil, nil},
-      {"Google Chrome", nil, laptopScreen, hs.layout.left50, nil, nil},
-      {"Telegram", nil, laptopScreen, hs.layout.left50, nil, nil},
-      {"Skype", nil, laptopScreen, hs.layout.left50, nil, nil},
-      {"Spark", nil, laptopScreen, hs.layout.left50, nil, nil},
-
+      {"Safari", nil, targetScreen, hs.layout.left50, nil, nil},
+      {"Mail", nil, targetScreen, hs.layout.left50, nil, nil},
+      {"Finder", nil, targetScreen, hs.layout.left50, nil, nil},
+      {"Reminders", nil, targetScreen, hs.layout.left30, nil, nil},
+      {"Preview", nil, targetScreen, hs.layout.left50, nil, nil},
+      {"Code", nil, targetScreen, hs.layout.left50, nil, nil},
+      {"Google Chrome", nil, targetScreen, hs.layout.left50, nil, nil},
+      {"Brave Browser", nil, targetScreen, hs.layout.left50, nil, nil},
+      {"Skype", nil, targetScreen, hs.layout.left50, nil, nil},
+      {"Spark", nil, targetScreen, hs.layout.left50, nil, nil},
+      
       -- right
-      {"Notes", nil, laptopScreen, hs.layout.right50, nil, nil},
-      {"Terminal", nil, laptopScreen, hs.layout.right50, nil, nil},
-      {"Messages", nil, laptopScreen, hs.layout.right30, nil, nil},
-      {"Photos", nil, laptopScreen, hs.layout.right50, nil, nil},
-      {"1Password 7", nil, laptopScreen, hs.layout.right50, nil, nil},
-      {"Slack", nil, laptopScreen, hs.layout.right50, nil, nil},
-      {"Postman", nil, laptopScreen, hs.layout.right50, nil, nil},
+      {"Notes", nil, targetScreen, hs.layout.right50, nil, nil},
+      {"Terminal", nil, targetScreen, hs.layout.right50, nil, nil},
+      {"Messages", nil, targetScreen, hs.layout.right30, nil, nil},
+      {"Telegram", nil, targetScreen, hs.layout.right30, nil, nil},
+      {"Photos", nil, targetScreen, hs.layout.right50, nil, nil},
+      {"1Password 7", nil, targetScreen, hs.layout.right50, nil, nil},
+      {"Slack", nil, targetScreen, hs.layout.right50, nil, nil},
+      {"Postman", nil, targetScreen, hs.layout.right50, nil, nil},
+      {"Fantastical", nil, targetScreen, hs.layout.right50, nil, nil},
 
       -- maximised
-      {"Music", nil, laptopScreen, hs.layout.maximized, nil, nil}, -- to move it to fullscreen
-      {"Fantastical", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Notion", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Sequel Pro", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      -- {"Microsoft Excel", nil, laptopScreen, hs.layout.maximized, nil, nil},
+      {"Music", nil, secondaryScreen, hs.layout.maximized, nil, nil}, -- to move it to fullscreen
+      {"zoom.us", nil, secondaryScreen, hs.layout.maximized, nil, nil}, -- to move it to fullscreen
+      {"Todoist", nil, secondaryScreen, hs.layout.maximized, nil, nil}, -- to move it to fullscreen
+      {"IPC360", nil, secondaryScreen, hs.layout.maximized, nil, nil}, -- to move it to fullscreen
+      -- {"Fantastical", nil, targetScreen, hs.layout.maximized, nil, nil},
+      -- {"Microsoft Excel", nil, targetScreen, hs.layout.maximized, nil, nil},
   }
   hs.layout.apply(windowLayout)
 end)
 
 -- laptop monitor layout
 hs.hotkey.bind(cmd_alt_ctrl, "L", function()
-  local laptopScreen = "Colour LCD"
+  local targetScreen = "Colour LCD"
   local windowLayout = {
       -- left
-      {"Reminders", nil, laptopScreen, hs.layout.left50, nil, nil},
-      {"Telegram", nil, laptopScreen, hs.layout.left50, nil, nil},
-      {"Skype", nil, laptopScreen, hs.layout.left50, nil, nil},
+      {"Reminders", nil, targetScreen, hs.layout.left50, nil, nil},
+      {"Telegram", nil, targetScreen, hs.layout.left50, nil, nil},
+      {"Skype", nil, targetScreen, hs.layout.left50, nil, nil},
 
       -- right
-      {"Messages", nil, laptopScreen, hs.layout.right50, nil, nil},
-      {"Notes", nil, laptopScreen, hs.layout.right50, nil, nil},
+      {"Messages", nil, targetScreen, hs.layout.right50, nil, nil},
+      {"Notes", nil, targetScreen, hs.layout.right50, nil, nil},
 
       -- maximised
-      {"Finder", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Safari", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Terminal", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Mail", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Photos", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Preview", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Music", nil, laptopScreen, hs.layout.maximized, nil, nil}, -- to move it to fullscreen
-      {"Google Chrome", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"1Password 7", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Code", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Fantastical", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Notion", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Slack", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Sequel Pro", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      {"Spark", nil, laptopScreen, hs.layout.maximized, nil, nil},
-      -- {"Microsoft Excel", nil, laptopScreen, hs.layout.maximized, nil, nil},
+      {"Finder", nil, targetScreen, hs.layout.maximized, nil, nil},
+      {"Safari", nil, targetScreen, hs.layout.maximized, nil, nil},
+      {"Brave Browser", nil, targetScreen, hs.layout.maximized, nil, nil},
+      {"Terminal", nil, targetScreen, hs.layout.maximized, nil, nil},
+      {"Mail", nil, targetScreen, hs.layout.maximized, nil, nil},
+      {"Photos", nil, targetScreen, hs.layout.maximized, nil, nil},
+      {"Preview", nil, targetScreen, hs.layout.maximized, nil, nil},
+      {"Music", nil, targetScreen, hs.layout.maximized, nil, nil}, -- to move it to fullscreen
+      {"Google Chrome", nil, targetScreen, hs.layout.maximized, nil, nil},
+      {"1Password 7", nil, targetScreen, hs.layout.maximized, nil, nil},
+      {"Code", nil, targetScreen, hs.layout.maximized, nil, nil},
+      {"Fantastical", nil, targetScreen, hs.layout.maximized, nil, nil},
+      {"Notion", nil, targetScreen, hs.layout.maximized, nil, nil},
+      {"Slack", nil, targetScreen, hs.layout.maximized, nil, nil},
+      {"Sequel Pro", nil, targetScreen, hs.layout.maximized, nil, nil},
+      {"Spark", nil, targetScreen, hs.layout.maximized, nil, nil},
+      -- {"Microsoft Excel", nil, targetScreen, hs.layout.maximized, nil, nil},
   }
   hs.layout.apply(windowLayout)
 end)

@@ -8,9 +8,11 @@ module.exports = {
     {
       match: finicky.matchHostnames([
         // 'www.smartrecruiters.com',
+        // http://tableau.sam-app.ro/#/site/acquisition/views/MGCoffeeShopAnalysis/OverviewofSumUpMerchants2?:iid=1
         /.*\.google.com$/, // match all google subdomains
         /.*\.greenhouse.io$/, // match all google subdomains
         /.*\.figma.com$/, // match all google subdomains
+        /.*\.sam-app.ro$/, // match all google subdomains
       ]),
       browser: 'Brave Browser',
     },
@@ -19,7 +21,6 @@ module.exports = {
         'app.qulture.rocks',
         'miro.com',
         'sumupteam.atlassian.net',
-        'sam-app.ro',
       ]),
       browser: 'Brave Browser',
     },
@@ -31,6 +32,16 @@ module.exports = {
     {
       // Open these urls in Chrome
       match: ({ url }) => url.pathname.includes('sumup'),
+      browser: 'Brave Browser',
+    },
+    {
+      // Open these urls in Chrome
+      match: ({ url }) => url.pathname.includes('SumUp'),
+      browser: 'Brave Browser',
+    },
+    {
+      // Open these urls in Chrome
+      match: ({ url }) => url.pathname.includes('tableauhttp://tableau.sam-app.ro/#/site/acquisition/views/MGCoffeeShopAnalysis/OverviewofSumUpMerchants2?:iid=1'),
       browser: 'Brave Browser',
     },
     // {
