@@ -1,0 +1,15 @@
+name: product
+parent: default
+
+matches:
+  # short Lorem ipsum
+  - trigger: ':product'
+    replace: |
+      Background and Opportunity
+      Goals and non-goals
+      What success looks like
+      Research
+      Requirements and dependencies
+      Design ideas
+      Alternatives considered
+      Milestones
