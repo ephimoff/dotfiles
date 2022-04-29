@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+###############################################################################
+# karabiner-elements
+###############################################################################
+
+source=$HOME/Projects/dotfiles/applications/karabiner
+
+target=$HOME/.config/karabiner/assets/complex_modifications/
+
+echo "Karabiner: Linking config files"
+if [[ -d "$source" ]] ; then
+    echo "Karabiner: Remove folder"
+    [[ -d "$target" ]] && rm -rf "$target"
+    ln -s "$source" "$target"
+fi
