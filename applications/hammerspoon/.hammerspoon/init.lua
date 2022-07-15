@@ -61,7 +61,7 @@ end)
 
 -- external monitor layout
 hs.hotkey.bind(cmd_alt_ctrl, "M", function()
-  local targetScreen = "LG HDR 4K"
+  local targetScreen = "DELL P2319H"
   local secondaryScreen = "Colour LCD"
   local windowLayout = {
       -- left

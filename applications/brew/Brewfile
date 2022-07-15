@@ -1,7 +1,7 @@
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-tap "federico-terzi/espanso"
+tap "espanso/espanso"
 brew "espanso"
 brew "zsh"
 cask "finicky"

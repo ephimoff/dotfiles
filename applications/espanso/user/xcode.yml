@@ -1,7 +1,0 @@
-name: xcode
-parent: default
-
-matches:
-  # Formal signature
-  - trigger: ':mark'
-    replace: '// MARK: - '
