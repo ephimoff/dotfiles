@@ -1,9 +1,10 @@
 module.exports = {
-  // browser names: 
+  // browser names:
   // Brave Browser
   // Google Chrome
   // Safari
-  defaultBrowser: 'Safari',
+  // Arc
+  defaultBrowser: 'Arc',
   handlers: [
     {
       match: finicky.matchHostnames([
@@ -41,7 +42,10 @@ module.exports = {
     },
     {
       // Open these urls in Chrome
-      match: ({ url }) => url.pathname.includes('tableauhttp://tableau.sam-app.ro/#/site/acquisition/views/MGCoffeeShopAnalysis/OverviewofSumUpMerchants2?:iid=1'),
+      match: ({ url }) =>
+        url.pathname.includes(
+          'http://tableau.sam-app.ro/#/site/acquisition/views/MGCoffeeShopAnalysis/OverviewofSumUpMerchants2?:iid=1'
+        ),
       browser: 'Brave Browser',
     },
     // {
