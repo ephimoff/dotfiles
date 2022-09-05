@@ -10,34 +10,26 @@ module.exports = {
       match: finicky.matchHostnames([
         // 'www.smartrecruiters.com',
         // http://tableau.sam-app.ro/#/site/acquisition/views/MGCoffeeShopAnalysis/OverviewofSumUpMerchants2?:iid=1
-        /.*\.google.com$/, // match all google subdomains
-        /.*\.greenhouse.io$/, // match all google subdomains
-        /.*\.figma.com$/, // match all google subdomains
-        /.*\.sam-app.ro$/, // match all google subdomains
+        /.*\unz.atlassian.net$/, // match all google subdomains
+        /.*\github.com$/, // match all google subdomains
+        /.*\.office365.com$/, // match all google subdomains
+        /.*\.sharepoint.com$/, // match all google subdomains
+        /.*\.personio.de$/, // match all google subdomains
       ]),
       browser: 'Brave Browser',
     },
     {
       match: finicky.matchHostnames([
         'app.qulture.rocks',
-        'miro.com',
-        'sumupteam.atlassian.net',
+        'heidelpay',
+        'unzer-group',
+        'github',
       ]),
       browser: 'Brave Browser',
     },
     {
       // Open these urls in Chrome
-      match: ({ url }) => url.pathname.includes('sumupteam'),
-      browser: 'Brave Browser',
-    },
-    {
-      // Open these urls in Chrome
-      match: ({ url }) => url.pathname.includes('sumup'),
-      browser: 'Brave Browser',
-    },
-    {
-      // Open these urls in Chrome
-      match: ({ url }) => url.pathname.includes('SumUp'),
+      match: ({ url }) => url.pathname.includes('https://github.com/unzercorp'),
       browser: 'Brave Browser',
     },
     {
