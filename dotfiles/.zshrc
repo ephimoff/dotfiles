@@ -24,7 +24,7 @@ ZSH_THEME="fwalch"
 
 # plugins to load (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # shellcheck disable=SC2034
-plugins=(git zsh-autosuggestions osx zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 # shellcheck disable=SC1090
 source "$ZSH/oh-my-zsh.sh"
 
@@ -37,7 +37,7 @@ source "$ZSH/oh-my-zsh.sh"
 # export PATH=~/.local/bin:$PATH
 
 # android simulator
-export ANDROID_SDK=/Users/antonefimov/Library/Android/sdk
+# export ANDROID_SDK=/Users/antonefimov/Library/Android/sdk
 
 # go
 # export PATH="/usr/local/go/bin:$PATH"
@@ -69,6 +69,7 @@ ssh-add -A 2>/dev/null;
 # For a full list of active aliases, run `alias`.
 # shellcheck disable=SC1090
 source "$HOME/.aliases"
+source $HOME/.aliases
 
 # Load functions
 # shellcheck disable=SC1090

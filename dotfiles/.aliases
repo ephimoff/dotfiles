@@ -44,5 +44,5 @@ alias ls="command ls -h ${colorflag}" # Always use color output for `ls`
 alias d='docker'
 alias dc='docker-compose'
 
-alias pro='cd ~/Projects'
+alias pro="cd ~/Projects"
 
