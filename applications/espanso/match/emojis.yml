@@ -16,3 +16,10 @@ matches:
     replace: 💪
   - trigger: ":handshake"
     replace: 🤝
+  - trigger: ":thinking"
+    replace: 🤔
+  - trigger: ":eyes"
+    replace: 👀
+  - trigger: ":cool"
+    replace: 😎
+

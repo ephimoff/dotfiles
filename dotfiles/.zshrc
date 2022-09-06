@@ -51,7 +51,7 @@ export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
 # scripts
 # export PATH="$HOME/Projects/scripts:$PATH"
 # export PATH="$HOME/.scripts:$PATH"
-export PATH="$HOME/Library/Android/sdk:$PATH"
+# export PATH="$HOME/Library/Android/sdk:$PATH"
 
 # pager
 export PATH="/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH"
@@ -69,7 +69,6 @@ ssh-add -A 2>/dev/null;
 # For a full list of active aliases, run `alias`.
 # shellcheck disable=SC1090
 source "$HOME/.aliases"
-source $HOME/.aliases
 
 # Load functions
 # shellcheck disable=SC1090
