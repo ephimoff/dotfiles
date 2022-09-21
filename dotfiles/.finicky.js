@@ -15,6 +15,9 @@ module.exports = {
         /.*\.office365.com$/, // match all google subdomains
         /.*\.sharepoint.com$/, // match all google subdomains
         /.*\.personio.de$/, // match all google subdomains
+        /.*\.lucid.co$/, // match all google subdomains
+        /.*\.lucidchart.co$/, // match all google subdomains
+        /.*\.twint.ch$/, // match all google subdomains
       ]),
       browser: 'Brave Browser',
     },

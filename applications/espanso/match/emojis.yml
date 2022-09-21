@@ -22,4 +22,9 @@ matches:
     replace: 👀
   - trigger: ":cool"
     replace: 😎
+  - trigger: ":pray"
+    replace: 🙏
+  - trigger: ":facepalm"
+    replace: 🤦‍♂️
+    
 
