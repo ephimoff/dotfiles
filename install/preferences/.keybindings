@@ -5,6 +5,9 @@
 # see https://github.com/ttscoff/KeyBindings for reference
 ###############################################################################
 
+# If a command fails, bash exits instead of continuing with the rest of the script
+set -o errexit
+
 keybindingsSource=$HOME/Projects/applications/keybindings/DefaultKeyBinding.dict
 
 keybindingsTarget=$HOME/Library/KeyBindings

@@ -4,6 +4,9 @@
 # Visual Studio Code
 ###############################################################################
 
+# If a command fails, bash exits instead of continuing with the rest of the script
+set -o errexit
+
 settingsSource=$HOME/Projects/dotfiles/applications/vscode/settings.json
 keybindingsSource=$HOME/Projects/dotfiles/applications/vscode/keybindings.json
 vsiconsSource=$HOME/Projects/dotfiles/applications/vscode/vsicons.settings.json

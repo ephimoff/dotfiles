@@ -4,6 +4,9 @@
 # espanso - text expander https://espanso.org/
 ###############################################################################
 
+# If a command fails, bash exits instead of continuing with the rest of the script
+set -o errexit
+
 source=$HOME/Projects/dotfiles/applications/espanso
 
 target=$HOME/Library/Preferences/espanso  

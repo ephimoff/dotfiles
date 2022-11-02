@@ -18,6 +18,8 @@ module.exports = {
         /.*\.lucid.co$/, // match all google subdomains
         /.*\.lucidchart.co$/, // match all google subdomains
         /.*\.twint.ch$/, // match all google subdomains
+        /.*\.lever.co$/, // match all google subdomains
+        /.*\.wbtmaster.de$/, // match all google subdomains
       ]),
       browser: 'Brave Browser',
     },
@@ -27,6 +29,7 @@ module.exports = {
         'heidelpay',
         'unzer-group',
         'github',
+        'unzer',
       ]),
       browser: 'Brave Browser',
     },

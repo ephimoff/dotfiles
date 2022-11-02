@@ -4,6 +4,9 @@
 # Maccy, a clipboard manager https://github.com/p0deje/Maccy
 ###############################################################################
 
+# If a command fails, bash exits instead of continuing with the rest of the script
+set -o errexit
+
 echo "Maccy: Change hotkey to CMD+SHIFT+V"
 defaults write org.p0deje.Maccy hotKey command+shift+v
 

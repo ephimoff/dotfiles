@@ -4,6 +4,9 @@
 # karabiner-elements
 ###############################################################################
 
+# If a command fails, bash exits instead of continuing with the rest of the script
+set -o errexit
+
 source=$HOME/Projects/dotfiles/applications/karabiner
 
 target=$HOME/.config/karabiner/assets/complex_modifications/

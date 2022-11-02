@@ -4,6 +4,9 @@
 # .zshrc config
 ###############################################################################
 
+# If a command fails, bash exits instead of continuing with the rest of the script
+set -o errexit
+
 source=$HOME/Projects/dotfiles/dotfiles/.zshrc
 
 target=$HOME/.zshrc
