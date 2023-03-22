@@ -9,18 +9,7 @@ export ZSH=$HOME/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="fwalch"
-# shellcheck disable=SC2034
-# ZSH_THEME="powerlevel9k/powerlevel9k"
 
-# powerlevel9k customisation
-# shellcheck disable=SC2034
-# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
-# shellcheck disable=SC2034
-# POWERLEVEL9K_TIME_BACKGROUND='black'
-# shellcheck disable=SC2034
-# POWERLEVEL9K_TIME_FOREGROUND='grey'
-# Enable command auto-correction.
-#ENABLE_CORRECTION="true"
 
 # plugins to load (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # shellcheck disable=SC2034
@@ -62,7 +51,6 @@ export PATH="/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH"
 # Add all known keys to the SSH agent
 ssh-add -A 2>/dev/null;
 
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -70,17 +58,10 @@ ssh-add -A 2>/dev/null;
 # shellcheck disable=SC1090
 source "$HOME/.aliases"
 
-# Load functions
-# shellcheck disable=SC1090
-# source "$HOME/.functions"
-
-# To retain the / added after completing directories or symbolic links to directories
-# setopt no_auto_remove_slash
-
 # shellcheck disable=SC2206
 fpath=(/usr/local/share/zsh-completions $fpath)
 # export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
+

@@ -26,5 +26,13 @@ matches:
     replace: 🙏
   - trigger: ":facepalm"
     replace: 🤦‍♂️
+  - trigger: ":troll-face"
+    replace: 😏
+  - trigger: ":crazy"
+    replace: 🤪
+  - trigger: ":fingers-cr"
+    replace: 🤞
+  - trigger: ":fingerscr"
+    replace: 🤞
     
 

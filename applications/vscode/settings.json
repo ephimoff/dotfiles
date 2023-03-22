@@ -4,11 +4,8 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontSize": 12,
   "editor.fontLigatures": true,
-  "editor.formatOnSave": true,
   "editor.quickSuggestionsDelay": 1,
-  "editor.tabSize": 2, // THIS WILL TRIGGER PRETTIER ON SAVE
-
-  "workbench.colorTheme": "One Dark Pro",
+  "editor.tabSize": 2,
   "workbench.iconTheme": "vscode-icons",
 
   "window.restoreFullscreen": true,
@@ -39,7 +36,7 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
 
-  "extensions.ignoreRecommendations": false,
+  "extensions.ignoreRecommendations": true,
 
   // "jest.pathToJest": "app/server/node_modules/.bin/jest",
   "eslint.packageManager": "yarn",
@@ -79,5 +76,13 @@
     }
   },
   "redhat.telemetry.enabled": false,
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "editor.formatOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "css.lint.unknownAtRules": "ignore",
+  "tailwindCSS.emmetCompletions": true
 }

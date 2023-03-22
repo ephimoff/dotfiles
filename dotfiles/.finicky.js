@@ -8,18 +8,23 @@ module.exports = {
   handlers: [
     {
       match: finicky.matchHostnames([
-        // 'www.smartrecruiters.com',
-        // http://tableau.sam-app.ro/#/site/acquisition/views/MGCoffeeShopAnalysis/OverviewofSumUpMerchants2?:iid=1
-        /.*\unz.atlassian.net$/, // match all google subdomains
-        /.*\github.com$/, // match all google subdomains
-        /.*\.office365.com$/, // match all google subdomains
-        /.*\.sharepoint.com$/, // match all google subdomains
-        /.*\.personio.de$/, // match all google subdomains
-        /.*\.lucid.co$/, // match all google subdomains
-        /.*\.lucidchart.co$/, // match all google subdomains
-        /.*\.twint.ch$/, // match all google subdomains
-        /.*\.lever.co$/, // match all google subdomains
-        /.*\.wbtmaster.de$/, // match all google subdomains
+        /.*\unz.atlassian.net$/, 
+        /.*\github.com$/, 
+        /.*\.office365.com$/, 
+        /.*\.sharepoint.com$/, 
+        /.*\.personio.de$/, 
+        /.*\.lucid.co$/, 
+        /.*\.lucidchart.co$/, 
+        /.*\.twint.ch$/, 
+        /.*\.lever.co$/, 
+        /.*\.wbtmaster.de$/, 
+        /.*\.freshdesk.com$/, 
+        /.*\.freshservice.com$/, 
+        /.*\.yammer.com$/, 
+        /.*\.datadoghq.eu$/, 
+        /.*\.ct.sendgrid.net$/,
+        /.*\.teams.cdn.office.net$/,
+
       ]),
       browser: 'Brave Browser',
     },
