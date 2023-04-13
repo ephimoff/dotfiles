@@ -39,16 +39,24 @@ module.exports = {
       browser: 'Brave Browser',
     },
     {
-      // Open these urls in Chrome
+      // Open these urls in 'Work' browser
       match: ({ url }) => url.pathname.includes('https://github.com/unzercorp'),
       browser: 'Brave Browser',
     },
     {
-      // Open these urls in Chrome
+      // Open these urls in 'Work' browser
       match: ({ url }) =>
         url.pathname.includes(
           'http://tableau.sam-app.ro/#/site/acquisition/views/MGCoffeeShopAnalysis/OverviewofSumUpMerchants2?:iid=1'
         ),
+      browser: 'Brave Browser',
+    },
+    {
+      // Open links from Teams and Outlook in 'work' browser
+      // match: ({opener}) =>
+      //   ["Mail", "Microsoft Outlook"].includes(opener.name),
+      match: ({opener}) => 
+        ["com.microsoft.teams", "com.microsoft.Outlook"].includes(opener.bundleId),
       browser: 'Brave Browser',
     },
     // {
