@@ -65,3 +65,6 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
 
+
+# Added by Amplify CLI binary installer
+export PATH="$HOME/.amplify/bin:$PATH"
