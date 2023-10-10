@@ -34,5 +34,7 @@ matches:
     replace: 🤞
   - trigger: ":fingerscr"
     replace: 🤞
+  - trigger: ":wave"
+    replace: 👋
     
 

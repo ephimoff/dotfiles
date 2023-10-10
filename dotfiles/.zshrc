@@ -10,6 +10,10 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="fwalch"
 
+# turn off autoupdates
+DISABLE_UPDATE_PROMPT=true
+DISABLE_AUTO_UPDATE=true
+
 
 # plugins to load (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # shellcheck disable=SC2034
