@@ -21,6 +21,36 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 # shellcheck disable=SC1090
 source "$ZSH/oh-my-zsh.sh"
 
+
+
+# ssh
+export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
+
+# Add all known keys to the SSH agent
+ssh-add -A 2>/dev/null;
+
+# pager
+export PATH="/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH"
+
+# Setting PATH for Python 3.11
+export PATH="/opt/homebrew/bin/python3:$PATH"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+# shellcheck disable=SC1090
+source "$HOME/.aliases"
+
+# shellcheck disable=SC2206
+fpath=(/usr/local/share/zsh-completions $fpath)
+# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/vault vault
+
+
+
 # User configuration
 # rbenv
 # eval "$(rbenv init - zsh)"
@@ -38,37 +68,13 @@ source "$ZSH/oh-my-zsh.sh"
 # mongoDB
 # export PATH=$PATH:/usr/local/mongodb/bin
 
-# ssh
-export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
-
 # scripts
 # export PATH="$HOME/Projects/scripts:$PATH"
 # export PATH="$HOME/.scripts:$PATH"
 # export PATH="$HOME/Library/Android/sdk:$PATH"
 
-# pager
-export PATH="/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH"
-
 # Add Visual Studio Code (code)
 # export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-# Add all known keys to the SSH agent
-ssh-add -A 2>/dev/null;
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-# shellcheck disable=SC1090
-source "$HOME/.aliases"
-
-# shellcheck disable=SC2206
-fpath=(/usr/local/share/zsh-completions $fpath)
-# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/vault vault
-
-
 # Added by Amplify CLI binary installer
-export PATH="$HOME/.amplify/bin:$PATH"
+# export PATH="$HOME/.amplify/bin:$PATH"
