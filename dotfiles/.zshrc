@@ -2,6 +2,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# to speed things up: https://blog.mattclemente.com/2020/06/26/oh-my-zsh-slow-to-load/
+
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -13,6 +16,15 @@ ZSH_THEME="fwalch"
 # turn off autoupdates
 DISABLE_UPDATE_PROMPT=true
 DISABLE_AUTO_UPDATE=true
+
+# cleanup history when it goes to 100 records
+HISTORY="$HOME/.zsh_history" # Path to zsh history file
+HISTORY_LOG="$HOME/.zsh_history.bak"
+MAX_HISTORY=100 # Maximum lines to keep in history
+
+if [[ $(expr $(wc -l < $HISTORY) \> $MAX_HISTORY) = "1" ]]; then
+    cat $HISTORY >> $HISTORY_LOG && echo '' > $HISTORY
+fi
 
 
 # plugins to load (plugins can be found in ~/.oh-my-zsh/plugins/*)
@@ -32,8 +44,6 @@ ssh-add -A 2>/dev/null;
 # pager
 export PATH="/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH"
 
-# Setting PATH for Python 3.11
-export PATH="/opt/homebrew/bin/python3:$PATH"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
