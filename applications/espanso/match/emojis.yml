@@ -4,37 +4,62 @@
 matches:
   - trigger: ":lol"
     replace: 😂
+
   - trigger: ":tu"
     replace: 👍
+
   - trigger: ":td"
     replace: 👎
+
   - trigger: ":shrug"
-    replace: "¯\\(ツ)/¯"
+    replace: 🤷
+
   - trigger: ":rocket"
     replace: 🚀
+
   - trigger: ":strong"
     replace: 💪
+
   - trigger: ":handshake"
     replace: 🤝
+
   - trigger: ":thinking"
     replace: 🤔
+
   - trigger: ":eyes"
     replace: 👀
+
   - trigger: ":cool"
     replace: 😎
+
   - trigger: ":pray"
     replace: 🙏
+
   - trigger: ":facepalm"
     replace: 🤦‍♂️
+
   - trigger: ":troll-face"
     replace: 😏
+
   - trigger: ":crazy"
     replace: 🤪
+
   - trigger: ":fingers-cr"
     replace: 🤞
+
   - trigger: ":fingerscr"
     replace: 🤞
+
   - trigger: ":wave"
     replace: 👋
+
+  - trigger: ":tick"
+    replace: ✔️
+
+  - trigger: ":greentick"
+    replace: ✅
+    
+  - trigger: ":redflag"
+    replace: 🚩
     
 

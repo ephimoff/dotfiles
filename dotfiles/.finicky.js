@@ -56,7 +56,7 @@ module.exports = {
       // match: ({opener}) =>
       //   ["Mail", "Microsoft Outlook"].includes(opener.name),
       match: ({opener}) => 
-        ["com.microsoft.teams", "com.microsoft.Outlook"].includes(opener.bundleId),
+        ["com.microsoft.teams", "com.microsoft.teams2", "com.microsoft.Outlook"].includes(opener.bundleId),
       browser: 'Brave Browser',
     },
     // {
