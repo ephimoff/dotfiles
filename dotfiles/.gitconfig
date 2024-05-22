@@ -43,3 +43,7 @@
 	email = a.ephimoff@gmail.com
 [credential]
 	helper = osxkeychain
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate

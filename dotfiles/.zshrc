@@ -20,7 +20,7 @@ DISABLE_AUTO_UPDATE=true
 # cleanup history when it goes to 100 records
 HISTORY="$HOME/.zsh_history" # Path to zsh history file
 HISTORY_LOG="$HOME/.zsh_history.bak"
-MAX_HISTORY=100 # Maximum lines to keep in history
+MAX_HISTORY=200 # Maximum lines to keep in history
 
 if [[ $(expr $(wc -l < $HISTORY) \> $MAX_HISTORY) = "1" ]]; then
     cat $HISTORY >> $HISTORY_LOG && echo '' > $HISTORY

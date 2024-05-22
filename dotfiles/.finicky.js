@@ -4,7 +4,7 @@ module.exports = {
   // Google Chrome
   // Safari
   // Arc
-  defaultBrowser: 'Arc',
+  defaultBrowser: 'Safari',
   handlers: [
     {
       match: finicky.matchHostnames([

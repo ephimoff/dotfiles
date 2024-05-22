@@ -7,39 +7,36 @@
   "editor.quickSuggestionsDelay": 1,
   "editor.tabSize": 2,
   "workbench.iconTheme": "vscode-icons",
-
   "window.restoreFullscreen": true,
   "workbench.commandPalette.preserveInput": true,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-
   // Git
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.autofetch": true,
-
   // Markdown related
   "markdownlint.config": {
     "default": true,
-    "MD007": { "indent": 2 },
+    "MD007": {
+      "indent": 2
+    },
     "MD013": false,
     "MD014": false,
-    "MD024": { "siblings_only": true },
+    "MD024": {
+      "siblings_only": true
+    },
     "MD033": false,
     "MD040": false
   },
   // Sets how line-breaks are rendered in the markdown preview. Setting it to 'true' creates a <br> for every newline.
   "markdown.preview.breaks": true,
-
   // Terminal
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
-
   "extensions.ignoreRecommendations": true,
-
   // "jest.pathToJest": "app/server/node_modules/.bin/jest",
-  "eslint.packageManager": "yarn",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -48,7 +45,7 @@
   ],
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
-  "prettier.jsxBracketSameLine": true,
+  "prettier.bracketSameLine": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -60,10 +57,13 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "cSpell.language": "en-GB",
-  "cSpell.userWords": ["dotfiles", "timeframes"],
+  "cSpell.userWords": [
+    "dotfiles",
+    "timeframes"
+  ],
   "vetur.format.defaultFormatterOptions": {
     "js-beautify-html": {
       "wrap_attributes": "force-expand-multiline"
@@ -75,7 +75,6 @@
       "sortAttributes": false
     }
   },
-  "redhat.telemetry.enabled": false,
   "vsicons.dontShowNewVersionMessage": true,
   "workbench.colorTheme": "Material Theme Ocean High Contrast",
   "[prisma]": {
@@ -84,5 +83,30 @@
   "editor.formatOnSave": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "css.lint.unknownAtRules": "ignore",
-  "tailwindCSS.emmetCompletions": true
+  "tailwindCSS.emmetCompletions": true,
+  "emmet.includeLanguages": {
+    "html.erb": "html",
+    "erb": "html"
+  },
+  // "[erb]": {
+  //   "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+  // },
+  // "files.associations": {
+  //   "*.html.erb": "erb"
+  // },
+  // "[ruby]": {
+  //   "editor.defaultFormatter": "Shopify.ruby-lsp"
+  // },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
 }
