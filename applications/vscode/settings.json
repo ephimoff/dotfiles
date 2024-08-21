@@ -56,27 +56,14 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "cSpell.language": "en-GB",
-  "cSpell.userWords": [
-    "dotfiles",
-    "timeframes"
-  ],
-  "vetur.format.defaultFormatterOptions": {
-    "js-beautify-html": {
-      "wrap_attributes": "force-expand-multiline"
-    },
-    "prettyhtml": {
-      "printWidth": 100,
-      "singleQuote": false,
-      "wrapAttributes": false,
-      "sortAttributes": false
-    }
-  },
   "vsicons.dontShowNewVersionMessage": true,
-  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "workbench.colorTheme": "Solarized Dark",
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
@@ -88,15 +75,6 @@
     "html.erb": "html",
     "erb": "html"
   },
-  // "[erb]": {
-  //   "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
-  // },
-  // "files.associations": {
-  //   "*.html.erb": "erb"
-  // },
-  // "[ruby]": {
-  //   "editor.defaultFormatter": "Shopify.ruby-lsp"
-  // },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
