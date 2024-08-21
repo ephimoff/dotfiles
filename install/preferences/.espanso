@@ -9,7 +9,7 @@ set -o errexit
 
 source=$HOME/Projects/dotfiles/applications/espanso
 
-target=$HOME/Library/Preferences/espanso  
+target=$HOME/Library/Application\ Support/espanso  
 
 echo "Espanso: Linking config files"
 if [[ -d "$source" ]] ; then

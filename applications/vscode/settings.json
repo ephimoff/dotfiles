@@ -63,7 +63,9 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "vsicons.dontShowNewVersionMessage": true,
-  "workbench.colorTheme": "Solarized Dark",
+
+  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
@@ -86,5 +88,5 @@
   },
   "[snippets]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  },
+  }
 }

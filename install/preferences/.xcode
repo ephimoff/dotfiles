@@ -7,16 +7,16 @@
 # If a command fails, bash exits instead of continuing with the rest of the script
 set -o errexit
 
-keybindingsSource=$HOME/Projects/dotfiles/applications/xcode/Default.idekeybindings
+# keybindingsSource=$HOME/Projects/dotfiles/applications/xcode/Default.idekeybindings
 
-xcodeUserSettings=$HOME/Library/Developer/Xcode/UserData
+# xcodeUserSettings=$HOME/Library/Developer/Xcode/UserData
 
-keybindingsTarget=$xcodeUserSettings/KeyBindings/Default.idekeybindings
+# keybindingsTarget=$xcodeUserSettings/KeyBindings/Default.idekeybindings
 
-echo "XCode: Linking keybindings"
-if [[ -f "$keybindingsSource" ]] ; then
-    [[ -f "$keybindingsTarget" ]] && rm -rf "$keybindingsTarget"
-    ln -s "$keybindingsSource" "$keybindingsTarget"
-else
-    ln -s "$keybindingsSource" "$keybindingsTarget"
-fi
+# echo "XCode: Linking keybindings"
+# if [[ -f "$keybindingsSource" ]] ; then
+#     [[ -f "$keybindingsTarget" ]] && rm -rf "$keybindingsTarget"
+#     ln -s "$keybindingsSource" "$keybindingsTarget"
+# else
+#     ln -s "$keybindingsSource" "$keybindingsTarget"
+# fi
