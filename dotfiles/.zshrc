@@ -35,11 +35,17 @@ source "$ZSH/oh-my-zsh.sh"
 
 
 
-# ssh
-export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
+# Start SSH agent if not running
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    eval "$(ssh-agent -s)" > /dev/null
+fi
 
-# Add all known keys to the SSH agent
-ssh-add -A 2>/dev/null;
+# Add only private keys (excluding .pub files)
+for key in ~/.ssh/*; do
+    if [[ -f "$key" && "$key" != *.pub ]]; then
+        ssh-add --apple-use-keychain "$key" 2>/dev/null
+    fi
+done
 
 # pager
 export PATH="/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH"
