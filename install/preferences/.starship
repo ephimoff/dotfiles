@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+###############################################################################
+# .starship config
+###############################################################################
+
+# If a command fails, bash exits instead of continuing with the rest of the script
+set -o errexit
+
+source=$HOME/Projects/dotfiles/applications/starship/starship.toml
+
+target=$HOME/.config/starship.toml
+
+echo "Starship config: Linking config files"
+if [[ -f "$source" ]] ; then
+    echo "Starship config: Remove file"
+    [[ -f "$target" ]] && rm -rf "$target"
+    ln -s "$source" "$target"
+fi

@@ -4,6 +4,7 @@ module.exports = {
   // Google Chrome
   // Safari
   // Arc
+  // Zen
   defaultBrowser: 'Safari',
   handlers: [
     {
@@ -26,7 +27,7 @@ module.exports = {
         /.*\.teams.cdn.office.net$/,
 
       ]),
-      browser: 'Brave Browser',
+      browser: 'Zen',
     },
     {
       match: finicky.matchHostnames([
@@ -36,12 +37,12 @@ module.exports = {
         'github',
         'unzer',
       ]),
-      browser: 'Brave Browser',
+      browser: 'Zen',
     },
     {
       // Open these urls in 'Work' browser
       match: ({ url }) => url.pathname.includes('https://github.com/unzercorp'),
-      browser: 'Brave Browser',
+      browser: 'Zen',
     },
     {
       // Open these urls in 'Work' browser
@@ -49,7 +50,7 @@ module.exports = {
         url.pathname.includes(
           'http://tableau.sam-app.ro/#/site/acquisition/views/MGCoffeeShopAnalysis/OverviewofSumUpMerchants2?:iid=1'
         ),
-      browser: 'Brave Browser',
+      browser: 'Zen',
     },
     {
       // Open links from Teams and Outlook in 'work' browser
@@ -57,7 +58,7 @@ module.exports = {
       //   ["Mail", "Microsoft Outlook"].includes(opener.name),
       match: ({opener}) => 
         ["com.microsoft.teams", "com.microsoft.teams2", "com.microsoft.Outlook"].includes(opener.bundleId),
-      browser: 'Brave Browser',
+      browser: 'Zen',
     },
     // {
     //   // Open these urls in Slack app

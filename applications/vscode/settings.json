@@ -1,11 +1,19 @@
 // Place your settings in this file to overwrite the default settings
 {
   // Appearance
-  "editor.fontFamily": "Fira Code",
-  "editor.fontSize": 12,
-  "editor.fontLigatures": true,
+  // "editor.fontFamily": "Fira Code",
+  // "editor.fontLigatures": true,
+  "editor.fontFamily": "'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.4,
+  "editor.fontLigatures": "'calt', 'ss01'",
   "editor.quickSuggestionsDelay": 1,
   "editor.tabSize": 2,
+  "editor.bracketPairColorization.enabled": true,
+  // "editor.wordWrap": "on",
+  "terminal.integrated.fontFamily": "Cascadia Code PL",
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.fontSize": 14,
   "workbench.iconTheme": "vscode-icons",
   "window.restoreFullscreen": true,
   "workbench.commandPalette.preserveInput": true,
@@ -63,7 +71,7 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "vsicons.dontShowNewVersionMessage": true,
-  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "workbench.colorTheme": "Material Fresh Theme 🍰",
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
@@ -86,5 +94,6 @@
   },
   "[snippets]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  },
+  "redhat.telemetry.enabled": false
 }
