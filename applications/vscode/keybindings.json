@@ -74,5 +74,9 @@
         "key": "ctrl+alt+o t",
         "command": "-org.timestamp",
         "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
     }
 ]

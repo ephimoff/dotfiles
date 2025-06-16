@@ -1,0 +1,127 @@
+[
+  {
+    "name": "😂",
+    "text": "😂",
+    "keyword": ":lol"
+  },
+  {
+    "name": "👍",
+    "text": "👍",
+    "keyword": ":tu"
+  },
+  {
+    "name": "👎",
+    "text": "👎",
+    "keyword": ":td"
+  },
+  {
+    "name": "🤷",
+    "text": "🤷",
+    "keyword": ":shrug"
+  },
+  {
+    "name": "🚀",
+    "text": "🚀",
+    "keyword": ":rocket"
+  },
+  {
+    "name": "💪",
+    "text": "💪",
+    "keyword": ":strong"
+  },
+  {
+    "name": "🤝",
+    "text": "🤝",
+    "keyword": ":handshake"
+  },
+  {
+    "name": "🤔",
+    "text": "🤔",
+    "keyword": ":thinking"
+  },
+  {
+    "name": "👀",
+    "text": "👀",
+    "keyword": ":eyes"
+  },
+  {
+    "name": "😎",
+    "text": "😎",
+    "keyword": ":cool"
+  },
+  {
+    "name": "🙏",
+    "text": "🙏",
+    "keyword": ":pray"
+  },
+  {
+    "name": "🤦‍♂️",
+    "text": "🤦‍♂️",
+    "keyword": ":facepalm"
+  },
+  {
+    "name": "😏",
+    "text": "😏",
+    "keyword": ":troll-face"
+  },
+  {
+    "name": "🤪",
+    "text": "🤪",
+    "keyword": ":crazy"
+  },
+  {
+    "name": "🤞",
+    "text": "🤞",
+    "keyword": ":fingers-cr"
+  },
+  {
+    "name": "🤞",
+    "text": "🤞",
+    "keyword": ":fingerscr"
+  },
+  {
+    "name": "👋",
+    "text": "👋",
+    "keyword": ":wave"
+  },
+  {
+    "name": "✔️",
+    "text": "✔️",
+    "keyword": ":tick"
+  },
+  {
+    "name": "✅",
+    "text": "✅",
+    "keyword": ":greentick"
+  },
+  {
+    "name": "🚩",
+    "text": "🚩",
+    "keyword": ":redflag"
+  },
+  {
+    "name": "Formal signature",
+    "text": "Best regards,\nAnton Efimov",
+    "keyword": ":sigf"
+  },
+  {
+    "name": "Informal signature",
+    "text": "Cheers,\nAnton",
+    "keyword": ":sigi"
+  },
+  {
+    "name": "email",
+    "text": "a.ephimoff@gmail.com",
+    "keyword": ":email"
+  },
+  {
+    "name": "Lorem ipsum - short",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "keyword": ":lorem1"
+  },
+  {
+    "name": "Lorem ipsum - long",
+    "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+    "keyword": ":lorem2"
+  }
+]
