@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   // browser names:
   // Brave Browser
   // Google Chrome
@@ -8,7 +8,8 @@ module.exports = {
   defaultBrowser: 'Safari',
   handlers: [
     {
-      match: finicky.matchHostnames([
+      // match: finicky.matchHostnames([
+      match: [
         /.*\unz.atlassian.net$/, 
         /.*\github.com$/, 
         /.*\.office365.com$/, 
@@ -25,18 +26,17 @@ module.exports = {
         /.*\.datadoghq.eu$/, 
         /.*\.ct.sendgrid.net$/,
         /.*\.teams.cdn.office.net$/,
-
-      ]),
+        /.*\.unzer.io$/,
+      ],
       browser: 'Zen',
     },
     {
-      match: finicky.matchHostnames([
-        'app.qulture.rocks',
+      // match: finicky.matchHostnames([
+      match: [
         'heidelpay',
         'unzer-group',
-        'github',
         'unzer',
-      ]),
+      ],
       browser: 'Zen',
     },
     {
@@ -44,14 +44,14 @@ module.exports = {
       match: ({ url }) => url.pathname.includes('https://github.com/unzercorp'),
       browser: 'Zen',
     },
-    {
-      // Open these urls in 'Work' browser
-      match: ({ url }) =>
-        url.pathname.includes(
-          'http://tableau.sam-app.ro/#/site/acquisition/views/MGCoffeeShopAnalysis/OverviewofSumUpMerchants2?:iid=1'
-        ),
-      browser: 'Zen',
-    },
+    // {
+    //   // Open these urls in 'Work' browser
+    //   match: ({ url }) =>
+    //     url.pathname.includes(
+    //       'http://tableau.sam-app.ro/#/site/acquisition/views/MGCoffeeShopAnalysis/OverviewofSumUpMerchants2?:iid=1'
+    //     ),
+    //   browser: 'Zen',
+    // },
     {
       // Open links from Teams and Outlook in 'work' browser
       // match: ({opener}) =>

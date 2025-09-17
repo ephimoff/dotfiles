@@ -85,3 +85,13 @@ source <(fzf --zsh)
 
 # enable starship
 eval "$(starship init zsh)"
+
+# bun completions
+[ -s "/Users/anton.efimov/.bun/_bun" ] && source "/Users/anton.efimov/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# python
+export PATH="$(brew --prefix python)/libexec/bin:$PATH"
