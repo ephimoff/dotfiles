@@ -15,7 +15,7 @@ matches:
       You are my Visual Analyst. For the image(s) I attach next: 
       - Describe the overall style, color palette, mood, and target audience in a detailed paragraph.
       - This description will be used as a creative prompt for future work.
-  - trigger: ":tr"
+  - trigger: ":transcribe"
     replace: |
       You are my Visual Analyst. For the image(s) I attach next: 
       1. Transcribe any readable text you see (say "unreadable" if not); 

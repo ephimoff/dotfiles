@@ -5,6 +5,7 @@ export default {
   // Safari
   // Arc
   // Zen
+  // Helium
   defaultBrowser: 'Safari',
   handlers: [
     {
@@ -37,12 +38,12 @@ export default {
         'unzer-group',
         'unzer',
       ],
-      browser: 'Zen',
+      browser: 'Helium',
     },
     {
       // Open these urls in 'Work' browser
       match: ({ url }) => url.pathname.includes('https://github.com/unzercorp'),
-      browser: 'Zen',
+      browser: 'Helium',
     },
     // {
     //   // Open these urls in 'Work' browser
@@ -57,8 +58,8 @@ export default {
       // match: ({opener}) =>
       //   ["Mail", "Microsoft Outlook"].includes(opener.name),
       match: ({opener}) => 
-        ["com.microsoft.teams", "com.microsoft.teams2", "com.microsoft.Outlook"].includes(opener.bundleId),
-      browser: 'Zen',
+        ["com.microsoft.teams", "com.microsoft.teams2", "com.microsoft.Outlook", "com.tinyspeck.slackmacgap"].includes(opener.bundleId),
+      browser: 'Helium',
     },
     // {
     //   // Open these urls in Slack app
