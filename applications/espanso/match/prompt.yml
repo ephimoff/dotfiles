@@ -81,5 +81,9 @@ matches:
         After presenting the three versions, highlight any unique elements or nuances from the original that might deserve special attention.
         Here's my rough draft:
         [insert rough draft]
+  - trigger: ":learn"
+    replace: |
+        I want to level up in the topic of [topic] over lunch. Find the most important information (the 20% of knowledge that gives 80% of the results). Give a brief explanation, key takeaways, and a study plan.
+
 
 
