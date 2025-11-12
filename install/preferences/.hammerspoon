@@ -7,7 +7,13 @@
 # If a command fails, bash exits instead of continuing with the rest of the script
 set -o errexit
 
-hammerspoonSource=$HOME/Projects/dotfiles/applications/hammerspoon/.hammerspoon/
+# Get the dotfiles directory (go up two levels from install/preferences/)
+if [[ -z "$DOTFILES_DIR" ]]; then
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    DOTFILES_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+fi
+
+hammerspoonSource=$DOTFILES_DIR/applications/hammerspoon/.hammerspoon/
 
 hammerspoonTarget=$HOME/.hammerspoon    
 

@@ -8,15 +8,21 @@
 # If a command fails, bash exits instead of continuing with the rest of the script
 set -o errexit
 
-keybindingsSource=$HOME/Projects/applications/keybindings/DefaultKeyBinding.dict
+# Get the dotfiles directory (go up two levels from install/preferences/)
+if [[ -z "$DOTFILES_DIR" ]]; then
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    DOTFILES_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+fi
+
+keybindingsSource=$DOTFILES_DIR/applications/keybindings/DefaultKeyBinding.dict
 
 keybindingsTarget=$HOME/Library/KeyBindings
 
 echo "Keybindings: Linking config file"
+# Create KeyBindings directory if it doesn't exist
+mkdir -p "$keybindingsTarget"
 if [[ -f "$keybindingsSource" ]] ; then
     echo "Keybindings: Remove shortcuts files if already exists"
-    [[ -f "$keybindingsTarget" ]] && rm -rf "$keybindingsTarget"
-    echo "Keybindings: create folder if doesn't exist"
-    [[ -d "$keybindingsTarget" ]] && mkdir "$keybindingsTarget"
+    [[ -f "$keybindingsTarget/DefaultKeyBinding.dict" ]] && rm -rf "$keybindingsTarget/DefaultKeyBinding.dict"
     ln -s "$keybindingsSource" "$keybindingsTarget/DefaultKeyBinding.dict"
 fi

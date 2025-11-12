@@ -7,7 +7,13 @@
 # If a command fails, bash exits instead of continuing with the rest of the script
 set -o errexit
 
-source=$HOME/Projects/dotfiles/applications/espanso
+# Get the dotfiles directory (go up two levels from install/preferences/)
+if [[ -z "$DOTFILES_DIR" ]]; then
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    DOTFILES_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+fi
+
+source=$DOTFILES_DIR/applications/espanso
 
 target=$HOME/Library/Application\ Support/espanso  
 

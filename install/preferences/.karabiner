@@ -7,13 +7,27 @@
 # If a command fails, bash exits instead of continuing with the rest of the script
 set -o errexit
 
-source=$HOME/Projects/dotfiles/applications/karabiner/*
+# Get the dotfiles directory (go up two levels from install/preferences/)
+if [[ -z "$DOTFILES_DIR" ]]; then
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    DOTFILES_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+fi
 
+source=$DOTFILES_DIR/applications/karabiner
 target=$HOME/.config/karabiner/assets/complex_modifications/
 
 echo "Karabiner: Linking config files"
+# Create target directory if it doesn't exist
+mkdir -p "$target"
 if [[ -d "$source" ]] ; then
-    echo "Karabiner: Remove folder"
-    [[ -d "$target" ]] && rm -rf "$target"
-    ln -s "$source" "$target"
+    # Link each JSON file individually
+    for file in "$source"/*.json; do
+        if [[ -f "$file" ]]; then
+            filename=$(basename "$file")
+            target_file="$target/$filename"
+            echo "Karabiner: Linking $filename"
+            [[ -f "$target_file" ]] && rm -rf "$target_file"
+            ln -s "$file" "$target_file"
+        fi
+    done
 fi

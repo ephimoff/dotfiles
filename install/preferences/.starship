@@ -7,11 +7,19 @@
 # If a command fails, bash exits instead of continuing with the rest of the script
 set -o errexit
 
-source=$HOME/Projects/dotfiles/applications/starship/starship.toml
+# Get the dotfiles directory (go up two levels from install/preferences/)
+if [[ -z "$DOTFILES_DIR" ]]; then
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    DOTFILES_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+fi
+
+source=$DOTFILES_DIR/applications/starship/starship.toml
 
 target=$HOME/.config/starship.toml
 
 echo "Starship config: Linking config files"
+# Create .config directory if it doesn't exist
+mkdir -p "$(dirname "$target")"
 if [[ -f "$source" ]] ; then
     echo "Starship config: Remove file"
     [[ -f "$target" ]] && rm -rf "$target"

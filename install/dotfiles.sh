@@ -3,11 +3,14 @@
 # If a command fails, bash exits instead of continuing with the rest of the script
 set -o errexit
 
+# Get the dotfiles directory (parent of install/)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DOTFILES_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+
 # Start
 echo "Starting $(basename "$0")"
 
-directory="${HOME}/Projects/dotfiles/dotfiles"
-# directory="../dotfiles"
+directory="$DOTFILES_DIR/dotfiles"
 backup=~/.dotfiles_backup
 files=$(find "$directory" -iname ".*" -maxdepth 1 -type f)
 
