@@ -49,3 +49,7 @@
 	sort = -committerdate
 [init]
 	defaultBranch = main
+[url "git@github.com-unzer:unzercorp/"]
+	insteadOf = git@github.com:unzercorp/
+[url "git@github.com-personal:"]
+	insteadOf = git@github.com:ephimoff/

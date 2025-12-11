@@ -2,19 +2,21 @@
 
 ## Critical Issues (Must Fix)
 
-### 1. **Path Handling Inconsistencies**
+### 1. **Path Handling Inconsistencies** ✅ FIXED
 
 - **Issue**: `bootstrap.sh` uses relative paths (`./install/...`) but scripts use absolute paths (`${HOME}/Projects/dotfiles/...`)
 - **Problem**: Scripts will fail if not run from the correct directory
 - **Location**: `bootstrap.sh`, all install scripts
 - **Fix**: Use `SCRIPT_DIR` variable to determine script location dynamically
+- **Status**: ✅ Fixed - All scripts now use `DOTFILES_DIR` variable derived from script location. Scripts work regardless of where the repo is cloned or from which directory they're executed.
 
-### 2. **Brewfile Path Issue**
+### 2. **Brewfile Path Issue** ✅ FIXED
 
 - **Issue**: `install/brew.sh` line 13 uses `~/Projects/dotfiles/applications/brew/Brewfile` with tilde
 - **Problem**: Tilde expansion doesn't work in quoted strings, will fail
 - **Location**: `install/brew.sh:13`
 - **Fix**: Use `${HOME}` or unquoted path, or better yet, use `SCRIPT_DIR`
+- **Status**: ✅ Fixed - Now uses `$DOTFILES_DIR/applications/brew/Brewfile` (line 17)
 
 ### 3. **Missing Prerequisites Check**
 
@@ -273,7 +275,7 @@
 
 ### High Priority (Fix Immediately)
 
-1. Fix path handling (issues #1, #2)
+1. ✅ Fix path handling (issues #1, #2) - **COMPLETED**
 2. Add prerequisite checks (#3, #17)
 3. Fix hardcoded paths (#6)
 4. Add missing dependencies (#5)

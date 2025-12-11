@@ -103,3 +103,6 @@ export PATH="$HOME/.local/bin:$PATH"
 # volta
 export PATH="/Users/anton.efimov/.volta/bin:$PATH"
 
+
+# Added by Antigravity
+export PATH="/Users/anton.efimov/.antigravity/antigravity/bin:$PATH"
